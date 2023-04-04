@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-- todo [Introduction](Introduction.md)
+- [Introduction](Introduction.md)
 - todo [Installing and activating the plugin](Installing-and-activating-the-plugin.md)
 - todo [Creating a form](Creating-a-form.md)
 - todo [Displaying a form](Displaying-a-form.md)
