@@ -3,8 +3,8 @@
 ## Getting Started
 
 - [Introduction](Introduction.md)
-- todo [Installing and activating the plugin](Installing-and-activating-the-plugin.md)
-- todo [Creating a form](Creating-a-form.md)
+- [Installing and activating the plugin](Installing-and-activating-the-plugin.md)
+- [Creating a form](Creating-a-form.md)
 - todo [Displaying a form](Displaying-a-form.md)
 - todo [Working with form entries](Working-with-form-entries.md)
 - todo [Configuring notification emails](Configuring-notification-emails.md)
