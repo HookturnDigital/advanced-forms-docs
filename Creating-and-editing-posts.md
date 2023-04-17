@@ -2,6 +2,8 @@
 
 ## Using a URL parameter to control which post is being edited
 
+See https://hookturn.freshdesk.com/a/solutions/articles/44002347511
+
 ### How to customize the query parameter name
 
 See https://hookturn.freshdesk.com/a/solutions/articles/44002347511
