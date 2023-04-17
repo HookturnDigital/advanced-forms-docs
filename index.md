@@ -6,7 +6,7 @@
 - [Installing and activating the plugin](Installing-and-activating-the-plugin.md)
 - [Creating a form](Creating-a-form.md)
 - [Displaying a form](Displaying-a-form.md)
-- todo [Working with form entries](Working-with-form-entries.md)
+- [Working with form entries](Working-with-form-entries.md)
 - todo [Configuring notification emails](Configuring-notification-emails.md)
 
 ## Reference
@@ -55,11 +55,11 @@
 - todo [How to change a users role on post creation](How-to-change-a-users-role-on-post-creation.md)
 - todo [How to change the value of a field during submission](How-to-change-the-value-of-a-field-during-submission.md)
 - todo [How to show image previews when uploaded to a form](How-to-show-image-previews-when-uploaded-to-a-form.md)
+- todo [How to display form entries](How-to-display-form-entries.md)
 
 ## Tools
 
 - todo [Importing and exporting forms](Importing-and-exporting-forms.md)
-- todo [Importing and exporting form entries](Importing-and-exporting-form-entries.md)
 
 ## Integrations
 
