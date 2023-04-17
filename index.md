@@ -7,7 +7,7 @@
 - [Creating a form](Creating-a-form.md)
 - [Displaying a form](Displaying-a-form.md)
 - [Working with form entries](Working-with-form-entries.md)
-- todo [Configuring notification emails](Configuring-notification-emails.md)
+- [Configuring notification emails](Configuring-notification-emails.md)
 
 ## Reference
 

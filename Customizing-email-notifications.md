@@ -8,7 +8,7 @@ https://hookturn.freshdesk.com/a/solutions/articles/44002348023
 https://hookturn.freshdesk.com/a/solutions/articles/44002348391
 
 ## How to add the current page title to the email notification on form submission
-Maybe set this up as a separate guide
+Maybe set this up as a separate guide given it is a bit more involved and has a few different approaches
 See [How to add the current page title to an email notification](How-to-add-the-current-page-title-to-an-email-notification.md)
 
 ## How to send email notifications to the current logged in user
