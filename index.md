@@ -32,6 +32,7 @@
 - todo [Customizing form entries](Customizing-form-entries.md)
 - todo [Pass arbitrary values through to a form](Pass-arbitrary-values-through-to-a-form.md)
 - todo [Working with repeaters](Working-with-repeaters.md)
+- todo [Working with hidden fields](Working-with-hidden-fields.md)
 
 ## Guides & Solutions
 
