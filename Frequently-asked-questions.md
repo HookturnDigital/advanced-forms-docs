@@ -9,6 +9,18 @@ Yes, you may have multiple forms on the same page.
 Advanced Forms can handle submissions without a reload using AJAX. Activate it for your form using
 the [`ajax` display argument](Display-arguments.md#uploader).
 
+## Can users access the media library via Advanced Forms?
+
+If a user is logged in and has permission to access the media library, upload fields should default to using the media
+library. This can be configured using the [`uploader` display argument](Display-arguments.md#uploader).
+
+### How can I restrict the available media when using the uploader?
+
+Restrictions on available media is best handled on the WordPress level rather than within Advanced Forms. There are some
+guides online on how to achieve this as well as some plugins which can help.
+See [this article](https://www.greengeeks.com/tutorials/protect-media-library-wordpress-users-uploads/) for both plugin-
+and code-based examples.
+
 ## Why does the image/file upload field change when a user is logged in or not?
 
 This discrepancy is due to how ACF handles image uploads in response to WordPress. When a user is not logged or lacks
@@ -33,41 +45,44 @@ the cache for the page with your form or to create a custom “thank you” page
 ## I’m seeing weird behaviour with my form that has a large number of fields. What could be wrong?
 
 If your form has a very large number of fields there is a risk that you will run into limits set by PHP. If the form is
-not working at all or you’re seeing weird behaviour, we recommend increasing the max_input_vars setting in PHP.
+not working at all or you’re seeing weird behaviour, we recommend increasing the `max_input_vars` setting in PHP.
 
 ## I can’t upload images using a gallery field in a form
 
-ACF Gallery fields use the WP media uploader under the hood which means that they require a signed in user to work. The
-user must also have the right capabilities to access the media library. If you want your form to be accesible for
-non-signed-in users as well, we recommend replacing the gallery field with a repeater of image fields.
+ACF's gallery field uses the WP media uploader under the hood which means it requires a signed in user to work. The
+user must also have the right capabilities to access the media library. If you want your form to be accessible for
+non-authenticated users as well, we recommend replacing the gallery field with a repeater of image fields.
 
 ## Can I use Advanced Forms to list a user's posts for editing or deleting?
 
-Using Advanced Forms Pro, a form can be used to both create and edit posts but Advanced Forms only handles the form
-itself. Displaying lists of posts is a bit outside the scope of the plugin but can be achieved a number of different
-ways. The right way for your project will depend on what kind of theme setup you have in place. e.g; if you have a
-custom coded theme, you have the flexibility of writing queries and template loops to suit the situation but if you are
-using a page builder, you may have to adapt using the tools provided.
+Using Advanced Forms Pro, a form can be used to both create and edit posts but the plugin only handles the form
+itself – it doesn't provide utilities for listing or deleting posts.
+
+Displaying lists of posts is a bit outside the scope of the plugin but can be achieved a number of different ways. The
+right way for your project will depend on what kind of theme setup you have in place. e.g; if you have a
+custom coded theme, you have the flexibility of writing WordPress queries and template loops to suit the situation but
+if you are using a page builder, you may have to adapt using the tools provided.
 
 The basic idea, however, is simple: you simply need to configure your theme to show all posts which the user is an
 author for (Advanced Forms Pro will automatically make them the author when creating a post) and then on each individual
-post page you can use the [[advanced_form] shortcode](TODO) to render a form for editing the current post. TODO - link
-to a guide on how to do this
+post page you can use the [[advanced_form] shortcode](Displaying-a-form.md#using-the-advancedform-shortcode) to render a
+form for editing the current post.
+See [_Using a form to edit the current post_](Creating-and-editing-posts.md#using-a-form-to-edit-the-current-post).
 
 Alternatively, you may wish to have a single dedicated page with your form and use a custom URL parameter to pass a post
 ID to the form.
-See [this guide](Creating-and-editing-posts.md#using-a-url-parameter-to-control-which-post-is-being-edited) for an
-example on how you can achieve this result.
+See [_Using a URL parameter to control which post is being
+edited_](Creating-and-editing-posts.md#using-a-url-parameter-to-control-which-post-is-being-edited).
 
 ### What about deleting posts?
 
 Again, this is something you'll need to build into your theme/implementation but consider using WordPress'
 [get_delete_post_link() function](https://developer.wordpress.org/reference/functions/get_delete_post_link/) within a
-query loop.
+query loop to delete the current post or you can pass a specific post ID to the function.
 
 ## Can I set the license key using WP CLI?
 
-No, this is not currently possible but we may look at providing this down the track.
+No, this is not currently possible.
 
 ## Can I export form entries?
 
@@ -103,23 +118,7 @@ hacker gains access to the database.
 
 ## Does the MailChimp integration support tags?
 
-The integration only supports list, name, and email address through the UI. However, you may use the
-[af/form/mailchimp/request filter](Hooks-reference.md#afformmailchimprequest) to modify the API request as needed.
-
-To learn more about what can be achieved via the MailChimp API this way, see
-the ["Add member to list" endpoint reference here](https://mailchimp.com/developer/marketing/api/list-members/add-member-to-list/).
-
-## Can users access the media library via Advanced Forms?
-
-If a user is logged in and has permission to access the media library, upload fields should default to using the media
-library. This can be configured using the [`uploader` display argument](Display-arguments.md#uploader).
-
-### Limiting available media
-
-Restrictions on available media is best handled on the WordPress level rather than within Advanced Forms. There are some
-guides online on how to achieve this as well as some plugins which can help.
-See [this article](https://www.greengeeks.com/tutorials/protect-media-library-wordpress-users-uploads/) for both plugin-
-and code-based examples.
+See [_How to add tags using PHP_](MailChimp.md#how-to-add-tags-using-php).
 
 ## How do I redirect to another page after submission?
 
@@ -127,39 +126,14 @@ You can pass a URL to the [`redirect` display argument](Display-arguments.md#red
 
 ## How do I change the submit button text?
 
-You can pass custom submit button text to the [`submit_text` display argument](Display-arguments.md#submittext) when
-displaying a form.
+See [_Customizing how the form renders_](Customizing-how-the-form-renders.md#customizing-the-submit-button-text).
 
 ## How do I connect my form to an external service?
 
 Advanced Forms Pro has built-in integrations with Slack, Mailchimp, and thousands of other services through Zapier. If
-you need to integrate with a service that is not supported it’s normally simple to build a custom integration. This
+you need to integrate with a service that is not supported, you may build a custom integration. This
 normally entails writing a [custom submission handler](Processing-form-submissions.md#custom-submission-handlers) which
-collects form data and sends it to an third-party API.
-
-## How do I only subscribe users in Mailchimp if they have checked a checkbox?
-
-To achieve this you can use the [af/form/mailchimp/request filter](Hooks-reference.md#afformmailchimprequest) and
-conditionally return `false` to stop the request. For example, if you have a checkbox field named
-`subscribe_to_newsletter` you can use the following snippet:
-
-```php
-<?php
-add_filter( 'af/form/mailchimp/request', function ( $request, $form, $args ) {
-	
-	// Isolate to a specific form.
-	if( $form['key'] !== 'form_62bd15508b9c9' ){
-		return $request;
-	}
-
-	// If the checkbox is not checked, return false to stop the request.
-	if ( ! af_get_field( 'subscribe_to_newsletter' ) ) {
-		return false;
-	}
-	
-	return $request;
-}, 10, 3 );
-```
+collects form data and sends it to a third-party API.
 
 ## How do I remove the default styles for a form?
 
@@ -168,7 +142,13 @@ snippet:
 
 ```php
 <?php
-add_action( 'af/form/enqueue/key=FORM_KEY', function ( $form, $args ) {
+add_action( 'af/form/enqueue', function ( $form, $args ) {
+
+	// Optionally scope this to a specific form.
+	if ( $form['key'] !== 'form_62bd15508b9c9' ) {
+		return;
+	}
+
 	// Remove default Advanced Forms styles
 	wp_dequeue_style( 'af-form-style' );
 	
