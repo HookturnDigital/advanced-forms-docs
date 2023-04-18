@@ -1,7 +1,5 @@
 # Frequently asked questions
 
-[//]: # (WIP - answer all of these then organise accordingly. Some may be better suited to troubleshooting or docs of their own)
-
 ## Can I have multiple forms on the same page?
 
 Yes, you may have multiple forms on the same page.
@@ -132,46 +130,51 @@ You can pass a URL to the [`redirect` display argument](Display-arguments.md#red
 You can pass custom submit button text to the [`submit_text` display argument](Display-arguments.md#submittext) when
 displaying a form.
 
--- TODO - work through these -------------------------------------------------------------------------------------------
-
 ## How do I connect my form to an external service?
 
 Advanced Forms Pro has built-in integrations with Slack, Mailchimp, and thousands of other services through Zapier. If
 you need to integrate with a service that is not supported it’s normally simple to build a custom integration. This
-normally entails writing a custom submission handler which collects form data and sends it to an third-party API.
+normally entails writing a [custom submission handler](Processing-form-submissions.md#custom-submission-handlers) which
+collects form data and sends it to an third-party API.
 
 ## How do I only subscribe users in Mailchimp if they have checked a checkbox?
 
-To achieve this you can use the af/form/mailchimp/request filter and conditionally return false to stop the request. For
-example, if you have a checkbox field named “subscribe_to_newsletter” you can use the following snippet:
+To achieve this you can use the [af/form/mailchimp/request filter](Hooks-reference.md#afformmailchimprequest) and
+conditionally return `false` to stop the request. For example, if you have a checkbox field named
+`subscribe_to_newsletter` you can use the following snippet:
 
 ```php
 <?php
-function form_mailchimp_conditional_checkbox( $request ) {
-  if ( af_get_field( 'subscribe_to_newsletter' ) ) {
-    return $request;
-  }
+add_filter( 'af/form/mailchimp/request', function ( $request, $form, $args ) {
+	
+	// Isolate to a specific form.
+	if( $form['key'] !== 'form_62bd15508b9c9' ){
+		return $request;
+	}
 
-  return false;
-}
-add_filter( 'af/form/mailchimp/request/key=FORM_KEY', 'form_mailchimp_conditional_checkbox', 10, 3 );
+	// If the checkbox is not checked, return false to stop the request.
+	if ( ! af_get_field( 'subscribe_to_newsletter' ) ) {
+		return false;
+	}
+	
+	return $request;
+}, 10, 3 );
 ```
 
 ## How do I remove the default styles for a form?
 
-Advanced Forms will enqueue both default styles from ACF and its own styles. To dequeue all of them, use the following
+Advanced Forms will enqueue default styles from both ACF and its own styles. To dequeue all of them, use the following
 snippet:
 
 ```php
 <?php
-function form_remove_default_styles() {
-  // Remove default Advanced Forms styles
-  wp_dequeue_style( 'af-form-style' );
-
-  // Remove default ACF styles
-  wp_dequeue_style( 'acf-input' );
-  wp_dequeue_style( 'acf-pro-input' );
-}
-add_action( 'af/form/enqueue/key=FORM_KEY', 'form_remove_default_styles' );
+add_action( 'af/form/enqueue/key=FORM_KEY', function ( $form, $args ) {
+	// Remove default Advanced Forms styles
+	wp_dequeue_style( 'af-form-style' );
+	
+	// Remove default ACF styles
+	wp_dequeue_style( 'acf-input' );
+	wp_dequeue_style( 'acf-pro-input' );
+} );
 ```
 
