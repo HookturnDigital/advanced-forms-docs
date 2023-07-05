@@ -12,7 +12,7 @@
 ## Reference
 
 - [Frequently asked questions](Frequently-asked-questions.md)
-- todo [Display arguments](Display-arguments.md)
+- [Display arguments](Display-arguments.md)
 - todo [Functions reference](Functions-reference.md) - need to look at sub pages for these
 - todo [Hooks refererence](Hooks-reference.md) - need to look at sub pages for these
 - todo [Troubleshooting](Troubleshooting.md)
