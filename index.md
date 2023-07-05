@@ -57,6 +57,7 @@
 - todo [How to change the value of a field during submission](How-to-change-the-value-of-a-field-during-submission.md)
 - todo [How to show image previews when uploaded to a form](How-to-show-image-previews-when-uploaded-to-a-form.md)
 - todo [How to display form entries](How-to-display-form-entries.md)
+- todo [Listing and deleting posts on the front end](Listing-and-deleting-posts-on-the-front-end.md) // DO THIS NEXT AND SEND LINK TO FREE SUPPORT REQUEST
 
 ## Tools
 
