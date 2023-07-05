@@ -144,11 +144,6 @@ snippet:
 <?php
 add_action( 'af/form/enqueue', function ( $form, $args ) {
 
-	// Optionally scope this to a specific form.
-	if ( $form['key'] !== 'form_62bd15508b9c9' ) {
-		return;
-	}
-
 	// Remove default Advanced Forms styles
 	wp_dequeue_style( 'af-form-style' );
 	
