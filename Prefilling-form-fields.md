@@ -20,7 +20,7 @@ with. For example:
 advanced_form( 'form_62bd15508b9c9', [
 	'values' => [
 		// These are mapping values to field names
-		'name' => 'John Snow',
+		'name' => 'Jon snow',
 		'email_address' => 'john@example.com',
 		// This is mapping a value to a field key
 		'field_62cd2f54f09b1' => 'Stark',
@@ -43,7 +43,7 @@ add_filter( 'af/field/prefill_value', function( $value, $field, $form, $args ) {
 	}
 
 	if ( $field['name'] === 'name' ) {
-		$value = 'John Snow';
+		$value = 'Jon snow';
 	}
 	
 	if ( $field['key'] === 'field_62cd2f54f09b1' ) {
@@ -54,7 +54,7 @@ add_filter( 'af/field/prefill_value', function( $value, $field, $form, $args ) {
 }, 10, 4 );
 ```
 
-In the above example, any fields of the same name will be pre-filled with the value `John Snow` so the one filter could
+In the above example, any fields of the same name will be pre-filled with the value `Jon snow` so the one filter could
 be used across multiple forms if needed. The filter also provides specific variants to make it easier to target fields
 by name or by field key. The functions hooked to these variants will only run for fields matching the specified name or
 key.
@@ -191,7 +191,8 @@ advanced_form( 'form_62bd15508b9c9', [
 ] );
 ```
 
-The following example demonstrates how to prefill a flexible content field when using the `af/field/prefill_value` filter:
+The following example demonstrates how to prefill a flexible content field when using the `af/field/prefill_value`
+filter:
 
 ```php
 add_filter( 'af/field/prefill_value', function ( $value, $field, $form, $args ) {
@@ -221,12 +222,71 @@ add_filter( 'af/field/prefill_value', function ( $value, $field, $form, $args ) 
 
 ### Prefilling clone fields
 
-[//]: # (todo)
+You may prefill clone fields by mapping an array of clone values to the field's name or key. If you wish to use the
+field name, be mindful that this changes depending on the clone field's **Prefix Field Names** setting. If the clone
+field is set to prefix field names, you must use a composite field name. e.g;
 
-https://hookturn.freshdesk.com/a/solutions/articles/44002350011
+```php
+$clone_field_name = 'cloned';
+$cloned_field_name = 'name';
+$composite_name = $clone_field_name . '_' . $cloned_field_name;
+
+advanced_form( 'form_62bd15508b9c9', [
+	'values' => [
+		$composite_name => 'Jon Snow',
+	]
+] );
+```
+
+If the clone field is set to **not** prefix field names, you may use the cloned field's name as though it were a field
+directly in the field group. e.g;
+
+```php
+advanced_form( 'form_62bd15508b9c9', [
+	'values' => [
+		'name' => 'Jon Snow',
+	]
+] );
+```
+
+When using field keys, you must use a composite of both the clone and cloned field keys joined with an underscore
+regardless of the field's **Prefix Field Names** setting. e.g;
+
+```php
+$clone_field_key = 'field_64a64a0b0a103a';
+$cloned_field_key = 'field_64a64a1e0a103b';
+$composite_key = $clone_field_key . '_' . $cloned_field_key;
+
+advanced_form( 'form_62bd15508b9c9', [
+	'values' => [
+		$composite_key => 'Jon Snow',
+	]
+] );
+```
 
 ## How to pre-fill fields from values in a URL query string
 
-[//]: # (todo)
+Given prefilling is done via PHP, you may prefill fields from any source you wish. One common source is the URL query
+string. This is useful when you wish to prefill fields from a link in an email or from a link on another page. It's
+important to note that the URL query string is not secure and should not be used to prefill sensitive data
 
-https://hookturn.freshdesk.com/a/solutions/articles/44002350039
+For security reasons, it is a good idea to [sanitize](https://developer.wordpress.org/apis/security/sanitizing/) and
+[validate](https://developer.wordpress.org/apis/security/data-validation/) (where possible) any values you prefill from
+the URL query string.
+
+```php
+add_filter( 'af/field/prefill_value', function ( $value, $field, $form, $args ) {
+	if ( $field['name'] === 'name' && isset( $_GET['prefill_name'] ) ) {
+
+		// We're expecting a string here. Sanitize the value for security.
+		$name = sanitize_text_field( $_GET['prefill_name'] );
+		 
+		// For this field, we're only accepting letters, spaces, and hyphens. Remove any characters that don't match.
+		$name = preg_replace( '/[^a-zA-Z\s-]/', '', $name );
+
+		$value = $name;
+	}
+
+	return $value;
+}, 10, 4 );
+```

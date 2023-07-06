@@ -12,7 +12,7 @@ advanced_form( 'form_62bd15508b9c9', [
 	'submit_text' => 'Send',
 	'ajax' => true,
 	'values' => [
-		'name' => 'John Snow',
+		'name' => 'Jon snow',
 		'email' => 'john@example.com',
 	],
 	'redirect' => '/thank-you',
