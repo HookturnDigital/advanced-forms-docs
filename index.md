@@ -21,7 +21,7 @@
 
 - [Registering forms programmatically](Registering-forms-programmatically.md)
 - todo [Customizing how the form renders](Customizing-how-the-form-renders.md)
-- todo [Prefilling form fields](Prefilling-form-fields.md)
+- [Prefilling form fields](Prefilling-form-fields.md)
 - todo [Creating and editing posts](Creating-and-editing-posts.md)
 - todo [Creating and editing users](Creating-and-editing-users.md)
 - todo [Working with calculated fields](Working-with-calculated-fields.md)
