@@ -1,7 +1,8 @@
 # Creating a form
 
 Creating a form is as simple as creating a new post in WordPress, then setting the form as the location for one or more
-field groups.
+field groups. This document outlines form creation via the UI. For information on creating forms via code,
+see [Registering forms programmatically](Registering-forms-programmatically.md).
 
 ## To create a new form
 

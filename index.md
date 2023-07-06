@@ -14,12 +14,12 @@
 - [Frequently asked questions](Frequently-asked-questions.md)
 - [Display arguments](Display-arguments.md)
 - [Functions reference](Functions-reference.md)
-- todo [Hooks refererence](Hooks-reference.md) - need to look at sub pages for these
+- todo [Hooks reference](Hooks-reference.md) - need to look at sub pages for these
 - todo [Troubleshooting](Troubleshooting.md)
 
 ## Advanced Usage
 
-- todo [Registering forms programmatically](Registering-forms-programmatically.md)
+- [Registering forms programmatically](Registering-forms-programmatically.md)
 - todo [Customizing how the form renders](Customizing-how-the-form-renders.md)
 - todo [Prefilling form fields](Prefilling-form-fields.md)
 - todo [Creating and editing posts](Creating-and-editing-posts.md)
