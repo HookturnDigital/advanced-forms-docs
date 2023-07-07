@@ -22,7 +22,7 @@
 - [Registering forms programmatically](Registering-forms-programmatically.md)
 - todo [Customizing how the form renders](Customizing-how-the-form-renders.md)
 - [Prefilling form fields](Prefilling-form-fields.md)
-- todo [Creating and editing posts](Creating-and-editing-posts.md)
+- [Creating and editing posts](Creating-and-editing-posts.md)
 - todo [Creating and editing users](Creating-and-editing-users.md)
 - todo [Working with calculated fields](Working-with-calculated-fields.md)
 - todo [Processing form submissions](Processing-form-submissions.md)
@@ -39,6 +39,7 @@
 - todo [Pass arbitrary values through to a form](Pass-arbitrary-values-through-to-a-form.md)
 - todo [Working with repeaters](Working-with-repeaters.md)
 - todo [Working with hidden fields](Working-with-hidden-fields.md)
+- todo [Applying custom restrictions to a form](Applying-custom-restrictions-to-a-form.md)
 
 ## Guides & Solutions
 
@@ -58,7 +59,8 @@
 - todo [How to change the value of a field during submission](How-to-change-the-value-of-a-field-during-submission.md)
 - todo [How to show image previews when uploaded to a form](How-to-show-image-previews-when-uploaded-to-a-form.md)
 - todo [How to display form entries](How-to-display-form-entries.md)
-- todo [Listing and deleting posts on the front end](Listing-and-deleting-posts-on-the-front-end.md) // DO THIS NEXT AND SEND LINK TO FREE SUPPORT REQUEST
+- todo [Listing and deleting posts on the front end](Listing-and-deleting-posts-on-the-front-end.md)
+- todo [How to create multiple posts with a single form submission](How-to-create-multiple-posts-with-a-single-form-submission.md)
 
 ## Tools
 
