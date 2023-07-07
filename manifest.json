@@ -21,10 +21,10 @@
 			}
 		},
 		"Creating-a-form.md": {
-			"post_title": "Creating an ACF frontend form using Advanced Forms for ACF",
+			"post_title": "Creating a form",
 			"post_name": "creating-a-form",
 			"meta": {
-				"rank_math_title": "Creating a form",
+				"rank_math_title": "Creating an ACF frontend form using Advanced Forms for ACF",
 				"rank_math_description": "How to create a form",
 				"rank_math_canonical_url": ""
 			},
