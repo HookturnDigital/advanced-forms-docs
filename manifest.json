@@ -1,6 +1,9 @@
 {
 	"TODO": [
-		"PERHAPS WE CHANGE THE 'SEO' KEY ABOVE TO 'POSTMETA' AND WORK OUT THE META KEYS WE NEED TO STORE IN THE DATABASE INSTEAD – THIS WILL BE MORE FLEXIBLE"
+		"Perhaps we change the 'seo' key above to 'postmeta' and work out the meta keys we need to store in the database instead – this will be more flexible"
+	],
+	"NOTES": [
+		"Taxonomies can be either the title or the ID of the taxonomy. Term names may actually work as well but they would look odd when creating missing terms"
 	],
 	"title": "Advanced Forms for ACF plugin documentation",
 	"version": "1.9",
@@ -9,24 +12,25 @@
 			"post_title": "Installing and activating the plugin",
 			"post_name": "installing-and-activating-the-plugin",
 			"post_excerpt": "",
+			"post_status" : "publish",
 			"meta": {
 				"rank_math_title": "Installing and activating the Advanced Forms for ACF plugin",
-				"rank_math_description": "How to install and activate the plugin",
+				"rank_math_description": "Learn how to install and activate the Advanced Forms for ACF plugin and start creating powerful frontend forms for your ACF fields",
 				"rank_math_canonical_url": ""
 			},
 			"taxonomies": {
 				"doc_section": [
-					"Getting Started",
-					"Something New"
+					"Getting Started"
 				]
 			}
 		},
 		"Creating-a-form.md": {
 			"post_title": "Creating a form",
 			"post_name": "creating-a-form",
+			"post_status" : "publish",
 			"meta": {
 				"rank_math_title": "Creating an ACF frontend form using Advanced Forms for ACF",
-				"rank_math_description": "How to create a form",
+				"rank_math_description": "Learn how to create a frontend form for your ACF fields using Advanced Forms for ACF",
 				"rank_math_canonical_url": ""
 			},
 			"taxonomies": {
