@@ -1,0 +1,38 @@
+{
+	"TODO": [
+		"PERHAPS WE CHANGE THE 'SEO' KEY ABOVE TO 'POSTMETA' AND WORK OUT THE META KEYS WE NEED TO STORE IN THE DATABASE INSTEAD – THIS WILL BE MORE FLEXIBLE"
+	],
+	"title": "Advanced Forms for ACF plugin documentation",
+	"version": "1.9",
+	"docs": {
+		"Installing-and-activating-the-plugin.md": {
+			"post_title": "Installing and activating the plugin",
+			"post_name": "installing-and-activating-the-plugin",
+			"post_excerpt": "",
+			"meta": {
+				"rank_math_title": "Installing and activating the Advanced Forms for ACF plugin",
+				"rank_math_description": "How to install and activate the plugin",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Getting Started"
+				]
+			}
+		},
+		"Creating-a-form.md": {
+			"post_title": "Creating an ACF frontend form using Advanced Forms for ACF",
+			"post_name": "creating-a-form",
+			"meta": {
+				"rank_math_title": "Creating a form",
+				"rank_math_description": "How to create a form",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Getting Started"
+				]
+			}
+		}
+	}
+}
