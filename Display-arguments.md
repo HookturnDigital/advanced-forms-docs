@@ -38,7 +38,7 @@ Or, if using the PHP function:
 advanced_form( 'form_62bd15508b9c9', [ 'submit_text' => 'Send' ] );
 ```
 
-The default value is `"Submit"`.
+The default value is `'Submit'`.
 
 ### redirect
 
