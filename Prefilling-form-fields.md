@@ -79,7 +79,6 @@ The following example demonstrates how to prefill a repeater field when using th
 ```php
 advanced_form( 'form_62bd15508b9c9', [
 	'values' => [
-		…
 		// 'books' is the field name but you may also use the field key
 		'books' => [
 			[
@@ -126,7 +125,6 @@ The following example demonstrates how to prefill a group field when using the `
 ```php
 advanced_form( 'form_62bd15508b9c9', [
 	'values' => [
-		…
 		// 'house' is the field name but you may also use the field key
 		'house' => [
 			'field_64a6434dacb0a' => 'Stark',
@@ -162,7 +160,6 @@ The following example demonstrates how to prefill a flexible content field when 
 ```php
 advanced_form( 'form_62bd15508b9c9', [
 	'values' => [
-		…
 		// 'life_events' is the field name but you may also use the field key
 		'life_events' => [
 			[
