@@ -44,7 +44,7 @@ The default value is "Submit".
 
 This controls the page the user is redirected to after the form is submitted. It can be used as follows:
 
-```
+```php
 [[advanced_form form="form_62bd15508b9c9" redirect="/thank-you"]]
 ```
 
@@ -61,7 +61,7 @@ The default value is `null` which will prevent the redirect from occurring.
 This controls whether the form is submitted via AJAX or not. An AJAX submission occurs without reloading the page and
 can provide the user with a faster, more seamless experience. It can be used as follows:
 
-```
+```php
 [[advanced_form form="form_62bd15508b9c9" ajax="1"]]
 ```
 
@@ -91,7 +91,7 @@ the [Prefilling form fields](Prefilling-form-fields.md) document for more detail
 This will exclude specified fields from the form. It can be used as follows:
 
 [//]: # (todo - test this using field keys and document here)
-```
+```php
 [[advanced_form form="form_62bd15508b9c9" exclude_fields="field_1,field_2"]]
 ```
 
@@ -106,7 +106,7 @@ advanced_form( 'form_62bd15508b9c9', [ 'exclude_fields' => [ 'field_1', 'field_2
 This controls which uploader to use for file uploads. You may pass `basic` for a standard file input field or `wp` for
 the WordPress media uploader. It can be used as follows:
 
-```
+```php
 [[advanced_form form="form_62bd15508b9c9" uploader="wp"]]
 ```
 
@@ -128,11 +128,15 @@ When enabled, filter mode will skip the form success message after submission an
 all fields with their submitted values. This is useful when using Advanced Forms as a profile edit screen or similar. It
 can be used as follows:
 
-`[[advanced_form form="form_62bd15508b9c9" filter_mode="1"]]`
+```php
+[[advanced_form form="form_62bd15508b9c9" filter_mode="1"]]
+```
 
 Or, if using the PHP function:
 
-`advanced_form( 'form_62bd15508b9c9', [ 'filter_mode' => true ] );`
+```php
+advanced_form( 'form_62bd15508b9c9', [ 'filter_mode' => true ] );
+```
 
 The default value is false.
 
@@ -145,11 +149,15 @@ The default value is false.
 This controls where the field instructions are displayed. The options are `label` to display the instructions below the
 field label or `field` to display the instructions below the field input. It can be used as follows:
 
-`[[advanced_form form="form_62bd15508b9c9" instruction_placement="field"]]`
+```php
+[[advanced_form form="form_62bd15508b9c9" instruction_placement="field"]]
+```
 
 Or, if using the PHP function:
 
-`advanced_form( 'form_62bd15508b9c9', [ 'instruction_placement' => 'field' ] );`
+```php
+advanced_form( 'form_62bd15508b9c9', [ 'instruction_placement' => 'field' ] );
+```
 
 The default value is `label`.
 
@@ -157,7 +165,7 @@ The default value is `label`.
 
 This controls whether the form title is displayed or not. It can be used as follows:
 
-```
+```php
 [[advanced_form form="form_62bd15508b9c9" display_title="1"]]
 ```
 
@@ -173,7 +181,7 @@ The default value is false.
 
 This controls whether the form description is displayed or not. It can be used as follows:
 
-```
+```php
 [[advanced_form form="form_62bd15508b9c9" display_description="1"]]
 ```
 
@@ -189,7 +197,7 @@ The default value is false.
 
 This controls the ID attribute of the form element. It can be used as follows:
 
-```
+```php
 [[advanced_form form="form_62bd15508b9c9" id="my-custom-form"]]
 ```
 
@@ -206,11 +214,15 @@ The default value is the form key.
 This controls whether the honeypot field is displayed or not. The honeypot is a hidden field designed to capture data
 from bots to help filter out spam. It can be used as follows:
 
-`[[advanced_form form="form_62bd15508b9c9" honeypot="0"]]`
+```php
+[[advanced_form form="form_62bd15508b9c9" honeypot="0"]]
+```
 
 Or, if using the PHP function:
 
-`advanced_form( 'form_62bd15508b9c9', [ 'honeypot' => false ] );`
+```php
+advanced_form( 'form_62bd15508b9c9', [ 'honeypot' => false ] );
+```
 
 The default value is true.
 
@@ -219,11 +231,15 @@ The default value is true.
 This controls the value of the `action` attribute of the form element. This effectively changes the destination the form
 is submitted to. It can be used as follows:
 
-`[[advanced_form form="form_62bd15508b9c9" target="/some/custom/endpoint"]]`
+```php
+[[advanced_form form="form_62bd15508b9c9" target="/some/custom/endpoint"]]
+```
 
 Or, if using the PHP function:
 
-`advanced_form( 'form_62bd15508b9c9', [ 'target' => '/some/custom/endpoint' ] );`
+```php
+advanced_form( 'form_62bd15508b9c9', [ 'target' => '/some/custom/endpoint' ] );
+```
 
 The default value is the current URL as provided by the ACF core function `acf_get_current_url()`.
 
@@ -234,7 +250,9 @@ customised form submission process – using the [redirect](#redirect) arg makes
 
 This controls whether the form is echoed or returned when using the PHP function. It can be used as follows:
 
-`$form = advanced_form( 'form_62bd15508b9c9', [ 'echo' => false ] );`
+```php
+$form = advanced_form( 'form_62bd15508b9c9', [ 'echo' => false ] );
+```
 
 The default value is true.
 
