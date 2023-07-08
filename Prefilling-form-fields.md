@@ -268,13 +268,6 @@ string. This is useful when you wish to prefill fields from a link in an email o
 important to note that the URL query string is not secure and should not be used to prefill sensitive data
 
 [htdocs_highlight]
-For security reasons, it is a good idea
-to [sanitize](https://developer.wordpress.org/apis/security/sanitizing/) and
-[validate](https://developer.wordpress.org/apis/security/data-validation/) (where possible) any values you prefill from
-the URL query string.
-[/htdocs_highlight]
-
-[htdocs_highlight]
 
 For security reasons, it is a good idea
 to [sanitize](https://developer.wordpress.org/apis/security/sanitizing/) and
@@ -282,17 +275,6 @@ to [sanitize](https://developer.wordpress.org/apis/security/sanitizing/) and
 the URL query string.
 
 [/htdocs_highlight]
-
-[htdocs_highlight]For security reasons, it is a good idea
-to [sanitize](https://developer.wordpress.org/apis/security/sanitizing/) and
-[validate](https://developer.wordpress.org/apis/security/data-validation/) (where possible) any values you prefill from
-the URL query string.[/htdocs_highlight]
-
-
-Some text here [htdocs_highlight] For security reasons, it is a good idea
-to [sanitize](https://developer.wordpress.org/apis/security/sanitizing/) and
-[validate](https://developer.wordpress.org/apis/security/data-validation/) (where possible) any values you prefill from
-the URL query string. [/htdocs_highlight] some more text here
 
 ```php
 add_filter( 'af/field/prefill_value', function ( $value, $field, $form, $args ) {
