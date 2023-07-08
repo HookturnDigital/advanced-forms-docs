@@ -38,7 +38,7 @@ Or, if using the PHP function:
 advanced_form( 'form_62bd15508b9c9', [ 'submit_text' => 'Send' ] );
 ```
 
-The default value is "Submit".
+The default value is `"Submit"`.
 
 ### redirect
 
@@ -71,7 +71,7 @@ Or, if using the PHP function:
 advanced_form( 'form_62bd15508b9c9', [ 'ajax' => true ] );
 ```
 
-The default value is false.
+The default value is `false`.
 
 ### values
 
@@ -138,7 +138,7 @@ Or, if using the PHP function:
 advanced_form( 'form_62bd15508b9c9', [ 'filter_mode' => true ] );
 ```
 
-The default value is false.
+The default value is `false`.
 
 ### label_placement
 
@@ -175,7 +175,7 @@ Or, if using the PHP function:
 advanced_form( 'form_62bd15508b9c9', [ 'display_title' => true ] );
 ```
 
-The default value is false.
+The default value is `false`.
 
 ### display_description
 
@@ -191,7 +191,7 @@ Or, if using the PHP function:
 advanced_form( 'form_62bd15508b9c9', [ 'display_description' => true ] );
 ```
 
-The default value is false.
+The default value is `false`.
 
 ### id
 
@@ -207,7 +207,7 @@ Or, if using the PHP function:
 advanced_form( 'form_62bd15508b9c9', [ 'id' => 'my-custom-form' ] );
 ```
 
-The default value is the form key.
+The default value is the **form key**.
 
 ### honeypot
 
@@ -224,7 +224,7 @@ Or, if using the PHP function:
 advanced_form( 'form_62bd15508b9c9', [ 'honeypot' => false ] );
 ```
 
-The default value is true.
+The default value is `true`.
 
 ### target
 
@@ -241,7 +241,7 @@ Or, if using the PHP function:
 advanced_form( 'form_62bd15508b9c9', [ 'target' => '/some/custom/endpoint' ] );
 ```
 
-The default value is the current URL as provided by the ACF core function `acf_get_current_url()`.
+The default value is the **current URL** as provided by the ACF core function `acf_get_current_url()`.
 
 This should only be used in advanced cases where you need to submit the form to a custom endpoint for a highly
 customised form submission process – using the [redirect](#redirect) arg makes sense for most use cases.
@@ -254,7 +254,7 @@ This controls whether the form is echoed or returned when using the PHP function
 $form = advanced_form( 'form_62bd15508b9c9', [ 'echo' => false ] );
 ```
 
-The default value is true.
+The default value is `true`.
 
 ## Filtering display arguments
 
