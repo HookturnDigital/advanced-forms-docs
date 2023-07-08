@@ -189,11 +189,14 @@ the block's settings under the **Editing** tab.
 You may also instruct the form to extract the post ID from the `post` URL query parameter. This is useful if you want to
 provide links to a page specifically for editing posts. To enable this behaviour, set the `post` arg to `param`.
 
-<div class="htdocs-warning">
-	<h4>Important:</h4>
-	<p>It is recommended that you restrict post editing to the post author only to prevent users editing posts they 
-don't own. See [Restrict editing to the post author only](#restrict-editing-to-the-post-author-only).</p>
-</div>
+[htdocs_highlight]
+
+**Important:**
+
+It is recommended that you restrict post editing to the post author only to prevent users editing posts they 
+don't own. See [Restrict editing to the post author only](#restrict-editing-to-the-post-author-only).
+
+[/htdocs_highlight]
 
 For example:
 
