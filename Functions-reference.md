@@ -25,7 +25,9 @@ $value = af_get_field( $field_key_or_name, $args = [] )
 Gets the value of a desired field from the current form submission. For example:
 
 ```php
-$value = af_get_field( 'field_62bd15508b9c9' );` or `$value = af_get_field( 'Name' );
+$value = af_get_field( 'field_62bd15508b9c9' );
+// or
+$value = af_get_field( 'Name' );
 ```
 
 The optional `$args` array supports the following arguments:
@@ -78,7 +80,9 @@ $form = af_get_form( $form_key_or_id )
 Gets a form array by a form key or form post ID. For example:
 
 ```php
-$form = af_get_form( 'form_62bd15508b9c9' );` or `$form = af_get_form( 123 );
+$form = af_get_form( 'form_62bd15508b9c9' );
+// or
+//$form = af_get_form( 123 );
 ```
 
 ## af_get_forms()
