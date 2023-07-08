@@ -14,7 +14,7 @@
 - [Frequently asked questions](Frequently-asked-questions.md)
 - [Display arguments](Display-arguments.md)
 - [Functions reference](Functions-reference.md)
-- todo [Hooks reference](Hooks-reference.md) - need to look at sub pages for these
+- todo [Hooks reference](Hooks-reference.md)
 - todo [Troubleshooting](Troubleshooting.md)
 
 ## Advanced Usage
@@ -61,6 +61,7 @@
 - todo [How to display form entries](How-to-display-form-entries.md)
 - todo [Listing and deleting posts on the front end](Listing-and-deleting-posts-on-the-front-end.md)
 - todo [How to create multiple posts with a single form submission](How-to-create-multiple-posts-with-a-single-form-submission.md)
+- todo [Calculating values across repeater fields](Calculating-values-across-repeater-fields.md)
 
 ## Tools
 

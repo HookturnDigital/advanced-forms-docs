@@ -1,0 +1,1 @@
+https://hookturn.freshdesk.com/support/solutions/articles/44002455094-using-a-calculated-field-to-show-an-aggregate-total-of-a-repeater-field
