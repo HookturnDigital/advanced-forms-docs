@@ -272,7 +272,7 @@ important to note that the URL query string is not secure and should not be used
 For security reasons, it is a good idea
 to [sanitize](https://developer.wordpress.org/apis/security/sanitizing/) and
 [validate](https://developer.wordpress.org/apis/security/data-validation/) (where possible) any values you prefill from
-the URL query string.
+the URL query string or any other source outside of your control.
 
 [/htdocs_highlight]
 
