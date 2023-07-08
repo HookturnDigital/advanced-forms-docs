@@ -65,7 +65,7 @@ if you are using a page builder, you may have to adapt using the tools provided.
 
 The basic idea, however, is simple: you simply need to configure your theme to show all posts which the user is an
 author for (Advanced Forms Pro will automatically make them the author when creating a post) and then on each individual
-post page you can use the [[advanced_form] shortcode](Displaying-a-form.md#using-the-advancedform-shortcode) to render a
+post page you can use the [[[advanced_form]] shortcode](Displaying-a-form.md#using-the-advancedform-shortcode) to render a
 form for editing the current post.
 See [_Using a form to edit the current post_](Creating-and-editing-posts.md#using-a-form-to-edit-the-current-post).
 

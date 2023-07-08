@@ -150,7 +150,7 @@ to `current`.
 
 When using the shortcode, this would look like:
 
-`[advanced_form form="form_62bd15508b9c9" post="current"]`
+`[[advanced_form form="form_62bd15508b9c9" post="current"]]`
 
 When using the `advanced_form()` function, this would look like:
 
@@ -169,7 +169,7 @@ WordPress having set up the global post object.
 
 If you know exactly which post you want to edit, you can set the `post` arg to the post ID. For example:
 
-`[advanced_form form="form_62bd15508b9c9" post="123"]`
+`[[advanced_form form="form_62bd15508b9c9" post="123"]]`
 
 When using the `advanced_form()` function, this would look like:
 
@@ -193,7 +193,7 @@ don't own. See [Restrict editing to the post author only](#restrict-editing-to-t
 
 For example:
 
-`[advanced_form form="form_62bd15508b9c9" post="param"]`
+`[[advanced_form form="form_62bd15508b9c9" post="param"]]`
 
 When using the `advanced_form()` function, this would look like:
 

@@ -3,7 +3,7 @@
 Display arguments are used to control the way a form is displayed and bahaves. They can be specified when rendering a
 form using the shortcode or PHP function. e.g;
 
-`[advanced_form form="form_62bd15508b9c9" submit_text="Send" ajax="1" redirect="/thank-you"]`
+`[[advanced_form form="form_62bd15508b9c9" submit_text="Send" ajax="1" redirect="/thank-you"]]`
 
 Or, if using the PHP function:
 
@@ -26,7 +26,7 @@ advanced_form( 'form_62bd15508b9c9', [
 
 This controls the the text of the submit button and can be used as follows:
 
-`[advanced_form form="form_62bd15508b9c9" submit_text="Send"]`
+`[[advanced_form form="form_62bd15508b9c9" submit_text="Send"]]`
 
 Or, if using the PHP function:
 
@@ -38,7 +38,7 @@ The default value is "Submit".
 
 This controls the page the user is redirected to after the form is submitted. It can be used as follows:
 
-`[advanced_form form="form_62bd15508b9c9" redirect="/thank-you"]`
+`[[advanced_form form="form_62bd15508b9c9" redirect="/thank-you"]]`
 
 Or, if using the PHP function:
 
@@ -51,7 +51,7 @@ The default value is `null` which will prevent the redirect from occurring.
 This controls whether the form is submitted via AJAX or not. An AJAX submission occurs without reloading the page and
 can provide the user with a faster, more seamless experience. It can be used as follows:
 
-`[advanced_form form="form_62bd15508b9c9" ajax="1"]`
+`[[advanced_form form="form_62bd15508b9c9" ajax="1"]]`
 
 Or, if using the PHP function:
 
@@ -75,7 +75,7 @@ the [Prefilling form fields](Prefilling-form-fields.md) document for more detail
 This will exclude specified fields from the form. It can be used as follows:
 
 [//]: # (todo - test this using field keys and document here)
-`[advanced_form form="form_62bd15508b9c9" exclude_fields="field_1,field_2"]`
+`[[advanced_form form="form_62bd15508b9c9" exclude_fields="field_1,field_2"]]`
 
 Or, if using the PHP function:
 
@@ -86,7 +86,7 @@ Or, if using the PHP function:
 This controls which uploader to use for file uploads. You may pass `basic` for a standard file input field or `wp` for
 the WordPress media uploader. It can be used as follows:
 
-`[advanced_form form="form_62bd15508b9c9" uploader="wp"]`
+`[[advanced_form form="form_62bd15508b9c9" uploader="wp"]]`
 
 Or, if using the PHP function:
 
@@ -104,7 +104,7 @@ When enabled, filter mode will skip the form success message after submission an
 all fields with their submitted values. This is useful when using Advanced Forms as a profile edit screen or similar. It
 can be used as follows:
 
-`[advanced_form form="form_62bd15508b9c9" filter_mode="1"]`
+`[[advanced_form form="form_62bd15508b9c9" filter_mode="1"]]`
 
 Or, if using the PHP function:
 
@@ -121,7 +121,7 @@ The default value is false.
 This controls where the field instructions are displayed. The options are `label` to display the instructions below the
 field label or `field` to display the instructions below the field input. It can be used as follows:
 
-`[advanced_form form="form_62bd15508b9c9" instruction_placement="field"]`
+`[[advanced_form form="form_62bd15508b9c9" instruction_placement="field"]]`
 
 Or, if using the PHP function:
 
@@ -133,7 +133,7 @@ The default value is `label`.
 
 This controls whether the form title is displayed or not. It can be used as follows:
 
-`[advanced_form form="form_62bd15508b9c9" display_title="1"]`
+`[[advanced_form form="form_62bd15508b9c9" display_title="1"]]`
 
 Or, if using the PHP function:
 
@@ -145,7 +145,7 @@ The default value is false.
 
 This controls whether the form description is displayed or not. It can be used as follows:
 
-`[advanced_form form="form_62bd15508b9c9" display_description="1"]`
+`[[advanced_form form="form_62bd15508b9c9" display_description="1"]]`
 
 Or, if using the PHP function:
 
@@ -157,7 +157,7 @@ The default value is false.
 
 This controls the ID attribute of the form element. It can be used as follows:
 
-`[advanced_form form="form_62bd15508b9c9" id="my-custom-form"]`
+`[[advanced_form form="form_62bd15508b9c9" id="my-custom-form"]]`
 
 Or, if using the PHP function:
 
@@ -170,7 +170,7 @@ The default value is the form key.
 This controls whether the honeypot field is displayed or not. The honeypot is a hidden field designed to capture data
 from bots to help filter out spam. It can be used as follows:
 
-`[advanced_form form="form_62bd15508b9c9" honeypot="0"]`
+`[[advanced_form form="form_62bd15508b9c9" honeypot="0"]]`
 
 Or, if using the PHP function:
 
@@ -183,7 +183,7 @@ The default value is true.
 This controls the value of the `action` attribute of the form element. This effectively changes the destination the form
 is submitted to. It can be used as follows:
 
-`[advanced_form form="form_62bd15508b9c9" target="/some/custom/endpoint"]`
+`[[advanced_form form="form_62bd15508b9c9" target="/some/custom/endpoint"]]`
 
 Or, if using the PHP function:
 
