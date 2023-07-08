@@ -1,6 +1,6 @@
 # Functions reference
 
-## `advanced_form()`
+## advanced_form()
 
 `advanced_form( $form_key_or_id, $args = [] )`
 
