@@ -20,7 +20,7 @@ with. For example:
 advanced_form( 'form_62bd15508b9c9', [
 	'values' => [
 		// These are mapping values to field names
-		'name' => 'Jon snow',
+		'name' => 'Jon Snow',
 		'email_address' => 'john@example.com',
 		// This is mapping a value to a field key
 		'field_62cd2f54f09b1' => 'Stark',
@@ -43,7 +43,7 @@ add_filter( 'af/field/prefill_value', function( $value, $field, $form, $args ) {
 	}
 
 	if ( $field['name'] === 'name' ) {
-		$value = 'Jon snow';
+		$value = 'Jon Snow';
 	}
 	
 	if ( $field['key'] === 'field_62cd2f54f09b1' ) {
@@ -54,7 +54,7 @@ add_filter( 'af/field/prefill_value', function( $value, $field, $form, $args ) {
 }, 10, 4 );
 ```
 
-In the above example, any fields of the same name will be pre-filled with the value `Jon snow` so the one filter could
+In the above example, any fields of the same name will be pre-filled with the value `Jon Snow` so the one filter could
 be used across multiple forms if needed. The filter also provides specific variants to make it easier to target fields
 by name or by field key. The functions hooked to these variants will only run for fields matching the specified name or
 key.
