@@ -45,7 +45,7 @@ implementation of the shortcode is as follows:
 This will render the form with the key `form_62bd15508b9c9` and use the default display arguments. You may pass in
 optional display arguments to further control the form's display and behaviour. e.g;
 
-`[[advanced_form form="form_62bd15508b9c9" ajax="true" display_title="true" redirect="https://example.com"]]`
+`[[advanced_form form="form_62bd15508b9c9" ajax="1" display_title="1" redirect="https://example.com"]]`
 
 For a full list of available display arguments, please see the [_Display arguments_](Display-arguments.md) page.
 
