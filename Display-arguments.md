@@ -3,7 +3,9 @@
 Display arguments are used to control the way a form is displayed and bahaves. They can be specified when rendering a
 form using the shortcode or PHP function. e.g;
 
-`[[advanced_form form="form_62bd15508b9c9" submit_text="Send" ajax="1" redirect="/thank-you"]]`
+```php
+[[advanced_form form="form_62bd15508b9c9" submit_text="Send" ajax="1" redirect="/thank-you"]]
+```
 
 Or, if using the PHP function:
 
@@ -26,11 +28,15 @@ advanced_form( 'form_62bd15508b9c9', [
 
 This controls the the text of the submit button and can be used as follows:
 
-`[[advanced_form form="form_62bd15508b9c9" submit_text="Send"]]`
+```php
+[[advanced_form form="form_62bd15508b9c9" submit_text="Send"]]
+```
 
 Or, if using the PHP function:
 
-`advanced_form( 'form_62bd15508b9c9', [ 'submit_text' => 'Send' ] );`
+```php
+advanced_form( 'form_62bd15508b9c9', [ 'submit_text' => 'Send' ] );
+```
 
 The default value is "Submit".
 
@@ -38,11 +44,15 @@ The default value is "Submit".
 
 This controls the page the user is redirected to after the form is submitted. It can be used as follows:
 
-`[[advanced_form form="form_62bd15508b9c9" redirect="/thank-you"]]`
+```
+[[advanced_form form="form_62bd15508b9c9" redirect="/thank-you"]]
+```
 
 Or, if using the PHP function:
 
-`advanced_form( 'form_62bd15508b9c9', [ 'redirect' => '/thank-you' ] );`
+```php
+advanced_form( 'form_62bd15508b9c9', [ 'redirect' => '/thank-you' ] );
+```
 
 The default value is `null` which will prevent the redirect from occurring.
 
@@ -51,11 +61,15 @@ The default value is `null` which will prevent the redirect from occurring.
 This controls whether the form is submitted via AJAX or not. An AJAX submission occurs without reloading the page and
 can provide the user with a faster, more seamless experience. It can be used as follows:
 
-`[[advanced_form form="form_62bd15508b9c9" ajax="1"]]`
+```
+[[advanced_form form="form_62bd15508b9c9" ajax="1"]]
+```
 
 Or, if using the PHP function:
 
-`advanced_form( 'form_62bd15508b9c9', [ 'ajax' => true ] );`
+```php
+advanced_form( 'form_62bd15508b9c9', [ 'ajax' => true ] );
+```
 
 The default value is false.
 
@@ -65,7 +79,9 @@ This will pre-fill values for specified form fields. Due to the complex structur
 rendering a form using the PHP function. It can be used as follows:
 
 [//]: # (todo - test this using field keys and document here)
-`advanced_form( 'form_62bd15508b9c9', [ 'values' => [ 'field_1_name' => 'value 1', 'field_2_name' => 'value 2' ] ] );`
+```php
+advanced_form( 'form_62bd15508b9c9', [ 'values' => [ 'field_1_name' => 'value 1', 'field_2_name' => 'value 2' ] ] );
+```
 
 You may also programmatically pre-fill field values using the `af/field/prefill_value` filter. See
 the [Prefilling form fields](Prefilling-form-fields.md) document for more detailed information.
@@ -75,22 +91,30 @@ the [Prefilling form fields](Prefilling-form-fields.md) document for more detail
 This will exclude specified fields from the form. It can be used as follows:
 
 [//]: # (todo - test this using field keys and document here)
-`[[advanced_form form="form_62bd15508b9c9" exclude_fields="field_1,field_2"]]`
+```
+[[advanced_form form="form_62bd15508b9c9" exclude_fields="field_1,field_2"]]
+```
 
 Or, if using the PHP function:
 
-`advanced_form( 'form_62bd15508b9c9', [ 'exclude_fields' => [ 'field_1', 'field_2' ] ] );`
+```php
+advanced_form( 'form_62bd15508b9c9', [ 'exclude_fields' => [ 'field_1', 'field_2' ] ] );
+```
 
 ### uploader
 
 This controls which uploader to use for file uploads. You may pass `basic` for a standard file input field or `wp` for
 the WordPress media uploader. It can be used as follows:
 
-`[[advanced_form form="form_62bd15508b9c9" uploader="wp"]]`
+```
+[[advanced_form form="form_62bd15508b9c9" uploader="wp"]]
+```
 
 Or, if using the PHP function:
 
-`advanced_form( 'form_62bd15508b9c9', [ 'uploader' => 'wp' ] );`
+```php
+advanced_form( 'form_62bd15508b9c9', [ 'uploader' => 'wp' ] );
+```
 
 Be mindful that the WordPress media uploader is not available to users without certain capabilities so the field used
 may change depending on the current user. This functionality is core to WordPress and is not controlled by Advanced
@@ -133,11 +157,15 @@ The default value is `label`.
 
 This controls whether the form title is displayed or not. It can be used as follows:
 
-`[[advanced_form form="form_62bd15508b9c9" display_title="1"]]`
+```
+[[advanced_form form="form_62bd15508b9c9" display_title="1"]]
+```
 
 Or, if using the PHP function:
 
-`advanced_form( 'form_62bd15508b9c9', [ 'display_title' => true ] );`
+```php
+advanced_form( 'form_62bd15508b9c9', [ 'display_title' => true ] );
+```
 
 The default value is false.
 
@@ -145,11 +173,15 @@ The default value is false.
 
 This controls whether the form description is displayed or not. It can be used as follows:
 
-`[[advanced_form form="form_62bd15508b9c9" display_description="1"]]`
+```
+[[advanced_form form="form_62bd15508b9c9" display_description="1"]]
+```
 
 Or, if using the PHP function:
 
-`advanced_form( 'form_62bd15508b9c9', [ 'display_description' => true ] );`
+```php
+advanced_form( 'form_62bd15508b9c9', [ 'display_description' => true ] );
+```
 
 The default value is false.
 
@@ -157,11 +189,15 @@ The default value is false.
 
 This controls the ID attribute of the form element. It can be used as follows:
 
-`[[advanced_form form="form_62bd15508b9c9" id="my-custom-form"]]`
+```
+[[advanced_form form="form_62bd15508b9c9" id="my-custom-form"]]
+```
 
 Or, if using the PHP function:
 
-`advanced_form( 'form_62bd15508b9c9', [ 'id' => 'my-custom-form' ] );`
+```php
+advanced_form( 'form_62bd15508b9c9', [ 'id' => 'my-custom-form' ] );
+```
 
 The default value is the form key.
 
