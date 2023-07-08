@@ -4,13 +4,13 @@ You may choose to prefill form fields on form render using a variety of methods.
 
 ## Available methods
 
-### Shortcode arg
+### Shortcode argument
 
 Due to the potential complexity of field values and shortcodes lacking support for complex data structures, it is not
 currently possible to prefill values via the shortcode. Instead, it is best to use the `advanced_form()` function or the
 `af/field/prefill_value` filter as documented below.
 
-### advanced_form() function arg
+### Function argument
 
 When using the `advanced_form()` function, you may pass a `values` argument to the function. This argument must be an
 array of key/value pairs where the key is the field name (or field key) and the value is the value to prefill the field
@@ -28,7 +28,7 @@ advanced_form( 'form_62bd15508b9c9', [
 ] );
 ```
 
-### `af/field/prefill_value` filter
+### Using a filter
 
 You may also use the `af/field/prefill_value` filter to prefill values. The filter runs shortly before a field is
 rendered and provides access to any current value, the field object, the form object, and the form render args so it is
