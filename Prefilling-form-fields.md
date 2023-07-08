@@ -165,7 +165,7 @@ advanced_form( 'form_62bd15508b9c9', [
 			[
 				'acf_fc_layout' => 'joined',
 				// Joined
-				'field_64a64546a1030' => 'Night\'s Watch',
+				'field_64a64546a1030' => "Night's Watch",
 				// Position
 				'field_64a645b0a1035' => 'Steward',
 			],
@@ -197,7 +197,7 @@ add_filter( 'af/field/prefill_value', function ( $value, $field, $form, $args ) 
 		$value = [
 			[
 				'acf_fc_layout' => 'joined',
-				'field_64a64546a1030' => 'Night\'s Watch',
+				'field_64a64546a1030' => "Night's Watch",
 				'field_64a645b0a1035' => 'Steward',
 			],
 			[
