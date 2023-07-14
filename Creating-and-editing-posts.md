@@ -193,8 +193,8 @@ provide links to a page specifically for editing posts. To enable this behaviour
 
 **Important:**
 
-It is recommended that you restrict post editing to the post author only to prevent users editing posts they 
-don't own. See [Restrict editing to the post author only](#restrict-editing-to-the-post-author-only).
+It is recommended that you restrict post editing to the post author only to prevent users editing posts they don't own.
+See [Restrict editing to the post author only](#restrict-editing-to-the-post-author-only).
 
 [/htdocs_highlight]
 
@@ -244,19 +244,49 @@ form's **Restrictions** settings:
 This will prevent everyone (admins included) from editing posts that they did not create. For more granular control,
 see [Applying custom restrictions to a form](Applying-custom-restrictions-to-a-form.md).
 
-## Customizations (should these perhaps go in separate docs?)
+### Running custom actions after a post is updated
 
-### How to customise the post author
+After an existing post is updated, the `af/form/editing/post_updated` action is fired. You may use this action to run
+any custom functionality that is specific to new posts. For example;
 
-### How to set the post excerpt when creating or editing a post https://hookturn.freshdesk.com/a/solutions/articles/4400242
+```php
+add_action( 'af/form/editing/post_updated', function ( $post, $form, $args ) {
+	// Restrict to a specific form
+	if( $form['key'] !== 'form_62bd15508b9c9' ){
+		return;
+	}
+	
+	$post_id = $post->ID;
+	// Do something with the post ID here…
+	
+}, 10, 3 );
+```
 
-### How to set the newly created user as author of a newly created post https://hookturn.freshdesk.com/a/solutions/articles/44002348398 Need to test this one as it may already be the case.
+[//]: # (## Customizations &#40;should these perhaps go in separate docs?&#41;)
 
-### How to prevent emails sending if form is updating a post https://hookturn.freshdesk.com/a/solutions/articles/44002348396
+[//]: # ()
 
-### How to remove emojis from created post titles https://hookturn.freshdesk.com/a/solutions/articles/44002348426
+[//]: # (### How to customise the post author)
 
-### How to assign taxonomy terms to posts https://hookturn.freshdesk.com/a/solutions/articles/44002378265
+[//]: # ()
+
+[//]: # (### How to set the post excerpt when creating or editing a post https://hookturn.freshdesk.com/a/solutions/articles/4400242)
+
+[//]: # ()
+
+[//]: # (### How to set the newly created user as author of a newly created post https://hookturn.freshdesk.com/a/solutions/articles/44002348398 Need to test this one as it may already be the case.)
+
+[//]: # ()
+
+[//]: # (### How to prevent emails sending if form is updating a post https://hookturn.freshdesk.com/a/solutions/articles/44002348396)
+
+[//]: # ()
+
+[//]: # (### How to remove emojis from created post titles https://hookturn.freshdesk.com/a/solutions/articles/44002348426)
+
+[//]: # ()
+
+[//]: # (### How to assign taxonomy terms to posts https://hookturn.freshdesk.com/a/solutions/articles/44002378265)
 
 ## Related docs
 
