@@ -2,7 +2,7 @@
 
 Displaying a form can be done in a number of ways:
 
-1. **Using the `[[advanced_form]]` shortcode.**<br>This option offers a good balance of flexibility in that it can be used
+1. **Using the `[[advanced_form]]` shortcode**<br>This option offers a good balance of flexibility in that it can be used
    anywhere a shortcode can be rendered whilst allowing you to pass in display arguments to control the form's
    behaviour.
 2. **Using the _Advanced Form_ block**<br>This option makes it possible to render a form using the WordPress block
