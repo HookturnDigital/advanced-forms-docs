@@ -1,4 +1,4 @@
-## Creating and editing users
+# Creating and editing users
 
 [htdocs_pro_feature_callout plugin="afp"]
 
