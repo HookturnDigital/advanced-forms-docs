@@ -23,7 +23,7 @@
 - todo [Customizing how the form renders](Customizing-how-the-form-renders.md)
 - [Prefilling form fields](Prefilling-form-fields.md)
 - [Creating and editing posts](Creating-and-editing-posts.md)
-- todo [Creating and editing users](Creating-and-editing-users.md)
+- [Creating and editing users](Creating-and-editing-users.md)
 - todo [Working with calculated fields](Working-with-calculated-fields.md)
 - todo [Processing form submissions](Processing-form-submissions.md)
 - todo [Working with merge tags](Working-with-merge-tags.md)

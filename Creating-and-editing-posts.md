@@ -1,17 +1,17 @@
 # Creating and editing posts
 
-<div class="htdocs-pro-feature-callout" data-plugin="afp"></div>
+[htdocs_pro_feature_callout plugin="afp"]
 
 A very common use case for ACF forms on the front end is to allow users to create and edit posts. Some examples of this
 include:
 
-1. User submitted blog posts
-2. Allowing users a single page to act as their profile
-3. Bespoke support ticket system where users can submit ticket posts
-4. A front end job board where users can submit job posts
-5. A front end directory where users can submit directory posts
-6. A real-estate listing site where users can submit property posts
-7. User reviews or products or services that are then displayed on the site
+- User submitted blog posts
+- Allowing users a single page to act as their profile
+- Bespoke support ticket system where users can submit ticket posts
+- A front end job board where users can submit job posts
+- A front end directory where users can submit directory posts
+- A real-estate listing site where users can submit property posts
+- User reviews or products or services that are then displayed on the site
 
 Advanced Forms Pro makes this very easy to do and with a comprehensive set of actions and filters available, you can
 customize the post creation and editing process to suit almost any scenario – the possibilties are endless.
@@ -61,6 +61,11 @@ array, and the form render args array. For example;
 
 ```php
 add_filter( 'af/form/editing/post_data', function ( $post_data, $form, $args ) {
+	// Restrict to a specific form
+	if( $form['key'] !== 'form_62bd15508b9c9' ){
+		return;
+	}
+	
 	// Override post title
 	$post_data['post_title'] = 'New post title!';
 
@@ -118,7 +123,7 @@ through the use of render arguments and without explicit instruction, Advanced F
 provides a lot of flexibility. To use a form to edit an existing post,
 see [Editing existing posts](#editing-existing-posts).
 
-### Running custom actions after a post is created
+### Running custom code after a post is created
 
 After a post is created, the `af/form/editing/post_created` action is fired. You may use this action to run any custom
 functionality that is specific to new posts. For example;
@@ -131,6 +136,7 @@ add_action( 'af/form/editing/post_created', function ( $post, $form, $args ) {
 	}
 	
 	$post_id = $post->ID;
+	
 	// Do something with the post ID here…
 	
 }, 10, 3 );
@@ -138,10 +144,12 @@ add_action( 'af/form/editing/post_created', function ( $post, $form, $args ) {
 
 ## Editing existing posts
 
-To edit an existing post, you must provide a post ID to the form. This is provided through the `post` form arg. Setting
-this arg tells Advanced Forms Pro that the form submission is an update request and specifies which post to target. This
-can be provided both in the shortcode and the `advanced_form()` function. It can also be set if using the **Advanced
-Form** block in the block editor.
+To edit an existing post, you must specify which post to target using the `post` form arg. Setting this arg gives
+Advanced Forms Pro context and indicates that the form is intended for editing an existing post. If the plugin can find
+the post, it will preload the values into the form for editing.
+
+The post context can be passed to both the shortcode and the `advanced_form()` function. It can also be set if using
+the **Advanced Form** block in the block editor.
 
 ### Editing the current post
 
@@ -165,7 +173,8 @@ the **Editing** tab.
 
 When set to `current`, Advanced Forms will make a call to
 WordPress' [get_the_ID() function](https://developer.wordpress.org/reference/functions/get_the_id/) so this relies on
-WordPress having set up the global post object.
+WordPress having set up the global post object. If the form is not loading values on render, try moving the form inside
+the loop.
 
 ### Editing a post by ID
 
@@ -244,7 +253,7 @@ form's **Restrictions** settings:
 This will prevent everyone (admins included) from editing posts that they did not create. For more granular control,
 see [Applying custom restrictions to a form](Applying-custom-restrictions-to-a-form.md).
 
-### Running custom actions after a post is updated
+### Running custom code after a post is updated
 
 After an existing post is updated, the `af/form/editing/post_updated` action is fired. You may use this action to run
 any custom functionality that is specific to new posts. For example;
@@ -257,36 +266,11 @@ add_action( 'af/form/editing/post_updated', function ( $post, $form, $args ) {
 	}
 	
 	$post_id = $post->ID;
+	
 	// Do something with the post ID here…
 	
 }, 10, 3 );
 ```
-
-[//]: # (## Customizations &#40;should these perhaps go in separate docs?&#41;)
-
-[//]: # ()
-
-[//]: # (### How to customise the post author)
-
-[//]: # ()
-
-[//]: # (### How to set the post excerpt when creating or editing a post https://hookturn.freshdesk.com/a/solutions/articles/4400242)
-
-[//]: # ()
-
-[//]: # (### How to set the newly created user as author of a newly created post https://hookturn.freshdesk.com/a/solutions/articles/44002348398 Need to test this one as it may already be the case.)
-
-[//]: # ()
-
-[//]: # (### How to prevent emails sending if form is updating a post https://hookturn.freshdesk.com/a/solutions/articles/44002348396)
-
-[//]: # ()
-
-[//]: # (### How to remove emojis from created post titles https://hookturn.freshdesk.com/a/solutions/articles/44002348426)
-
-[//]: # ()
-
-[//]: # (### How to assign taxonomy terms to posts https://hookturn.freshdesk.com/a/solutions/articles/44002378265)
 
 ## Related docs
 
@@ -295,3 +279,10 @@ add_action( 'af/form/editing/post_updated', function ( $post, $form, $args ) {
 - [How to change a users role on post creation](How-to-change-a-users-role-on-post-creation.md)
 - [How to redirect the form submission after post creation](How-to-redirect-the-form-submission-after-post-creation.md)
 - [How to create multiple posts with a single form submission](How-to-create-multiple-posts-with-a-single-form-submission.md)
+- [How to use URL parameters to switch between creating and editing posts](How-to-use-URL-parameters-to-switch-between-creating-and-editing-posts.md)
+- [How to assign taxonomy terms to posts](How-to-assign-taxonomy-terms-to-posts.md)
+- [How to customise the post author](How-to-customise-the-post-author.md)
+- [How to set the newly created user as author of a newly created post](How-to-set-the-newly-created-user-as-author-of-a-newly-created-post.md)
+- [How to set the post excerpt when creating or editing a post](How-to-set-the-post-excerpt-when-creating-or-editing-a-post.md)
+- [How to prevent emails sending if form is updating a post](How-to-prevent-emails-sending-if-form-is-updating-a-post.md)
+- [How to remove emojis from created post titles](How-to-remove-emojis-from-created-post-titles.md)
