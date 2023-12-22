@@ -71,21 +71,88 @@ add_filter( "af/form/before_render/key=$form_key", ... );
 When rendering a form, you may toggle the display of the title and description using the
 [`display_title` and `display_description` display arguments](Display-arguments.md#displaytitle).
 
-For programmatic control, see [filtering display arguments](Display-arguments.md#filtering-display-arguments).
+If you wish to do so using PHP, you may use the `af/form/args` filter to modify the display args:
+
+```php
+add_filter( 'af/form/args', function( $args, $form ) {
+	// Restrict to a specific form
+	if( $form['key'] !== 'form_62bd15508b9c9' ){
+		return $args;
+	}
+	
+	$args['display_title'] = false;
+	$args['display_description'] = false;
+
+	return $args;
+}, 10, 2 );
+
+// You may also use more specific filters to target a form either by its post ID or form key
+add_filter( "af/form/args/id=$form_id", ... );
+add_filter( "af/form/args/key=$form_key", ... );
+```
 
 ## Customizing the submit button text
 
-todo
-You can pass custom submit button text to the [`submit_text` display argument](Display-arguments.md#submittext) when
+You may pass custom submit button text to the [`submit_text` display argument](Display-arguments.md#submittext) when
 displaying a form.
+
+If you wish to do so using PHP, you may use the `af/form/args` filter to modify the display args:
+
+```php
+add_filter( 'af/form/args', function( $args, $form ) {
+	// Restrict to a specific form
+	if( $form['key'] !== 'form_62bd15508b9c9' ){
+		return $args;
+	}
+	
+	$args['submit_text'] = 'Send message';
+	
+	// You may also include HTML
+	$args['submit_text'] = 'Send message <span class="dashicons dashicons-email"></span>';
+
+	return $args;
+}, 10, 2 );
+
+// You may also use more specific filters to target a form either by its post ID or form key
+add_filter( "af/form/args/id=$form_id", ... );
+add_filter( "af/form/args/key=$form_key", ... );
+```
 
 ## Customizing the form wrapper attributes
 
-todo - document `af/form/attributes` filter
+If you need to add custom or modify existing HTML attributes to the `<form>` element, you may use
+the `af/form/attributes` filter:
+
+```php
+add_filter( 'af/form/attributes', function( $attributes, $form, $args ) {
+	// Restrict to a specific form
+	if( $form['key'] !== 'form_62bd15508b9c9' ){
+		return $attributes;
+	}
+	
+	//$attributes['class'] = 'my-custom-class';
+	$attributes['data-foo'] = 'bar';
+
+	return $attributes;
+}, 10, 3 );
+
+// You may also use more specific filters to target a form either by its post ID or form key
+add_filter( "af/form/attributes/id=$form_id", ... );
+add_filter( "af/form/attributes/key=$form_key", ... );
+```
 
 ### Add custom CSS classes for CSS styling
 
-todo
+Advanced Forms adds the `af-form` class to the form wrapper but you may add additional classes as follows:
+
+```php
+add_filter( 'af/form/attributes', function( $attributes, $form, $args ) {
+	
+	$attributes['class'] .= ' my-custom-class';
+	
+	return $attributes;
+}, 10, 3 );
+```
 
 ## Adding HTML before and after a form
 
