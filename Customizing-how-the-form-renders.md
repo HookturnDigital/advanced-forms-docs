@@ -45,7 +45,6 @@ is available in our support documents:
 You may set the form title and description on the form edit screen as follows:
 
 ![advanced-forms-pro-for-acf-form-title-and-description-fields.jpg](images/advanced-forms-pro-for-acf-form-title-and-description-fields.jpg)
-advanced-forms-pro-for-acf-form-title-and-description-fields.jpg
 
 If you wish to do so using PHP, you may use the `af/form/before_render` filter to modify the form object:
 
