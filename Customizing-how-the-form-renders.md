@@ -2,6 +2,32 @@
 
 Advanced Forms offers a vast array of options, hooks, and filters for customizing how a form renders.
 
+During development, if you need a quick visual reference for where action hooks sit within a form, you may use the
+following snippet. This will render markup on the front end that shows the name of each hook as it is fired during form
+render so be sure to use this in an environment that is not publicly accessible:
+
+```php
+$show_hooks = [
+	'af/form/enqueue',
+	'af/form/before_title',
+	'af/form/after',
+	'af/form/before_field_wrapper',
+	'af/form/before_fields',
+	'af/form/hidden_fields',
+	'af/field_group/before_field_group',
+	'af/field/before_field',
+	'af/field/after_field',
+	'af/field_group/after_field_group',
+	'af/form/after_fields',
+	'af/form/after_field_wrapper',
+];
+foreach ( $show_hooks as $hook ) {
+	add_action( $hook, function () use ( $hook ) {
+		echo '<p style="background: #0a4b78; color: white; padding: 4px 8px; font-size: 14px; margin-block: 1px;">' . $hook . '</p>';
+	}, 10, 2 );
+}
+```
+
 ## Excluding fields from the form
 
 You may wish to exclude certain fields from the form. This can be done using
@@ -153,11 +179,38 @@ add_filter( 'af/form/attributes', function( $attributes, $form, $args ) {
 
 ## Adding HTML before and after a form
 
-todo - document the `af/form/enqueue` and `af/form/after` filters
+You may render custom markup before and after a form using the `af/form/enqueue` and `af/form/after` filters:
+
+```php
+add_filter( 'af/form/enqueue', function( $form, $args ) {
+	echo '<div class="my-custom-wrapper">';
+}, 10, 2 );
+
+add_filter( 'af/form/after', function( $form, $args ) {
+	echo '</div>';
+}, 10, 2 );
+
+// You may also use more specific filters to target a form either by its post ID or form key
+add_filter( "af/form/enqueue/id=$form_id", ... );
+add_filter( "af/form/enqueue/key=$form_key", ... );
+
+add_filter( "af/form/after/id=$form_id", ... );
+add_filter( "af/form/after/key=$form_key", ... );
+```
 
 ## Adding HTML before the form title
 
-todo - document `af/form/before_title` filter. Note this renders before submission errors.
+If you wish to add custom markup just after the opening `<form>` tag, you may use the `af/form/before_title` filter:
+
+```php
+add_filter( 'af/form/before_title', function( $form, $args ) {
+	echo '<p>Some custom element</p>';
+}, 10, 2 );
+
+// You may also use more specific filters to target a form either by its post ID or form key
+add_filter( "af/form/before_title/id=$form_id", ... );
+add_filter( "af/form/before_title/key=$form_key", ... );
+```
 
 ## Adding hidden fields
 
@@ -165,8 +218,45 @@ See [Working with hidden fields](Working-with-hidden-fields.md).
 
 ## Adding HTML before and after all form fields
 
-todo - document `af/form/before_field_wrapper` and `af/form/after_field_wrapper` hooks.
-todo - document `af/form/before_fields` and `af/form/after_fields` hooks.
+If you wish to add custom markup before and after all form fields, you have two sets of hooks to choose from. The first
+option in the `af/form/before_field_wrapper` and `af/form/after_field_wrapper` hooks. These hooks fire once respectively
+before and after all the fields have rendered and encompass the submit button row as well:
+
+```php
+add_filter( 'af/form/before_field_wrapper', function( $form, $args ) {
+	echo '<div class="my-custom-wrapper">';
+}, 10, 2 );
+
+add_filter( 'af/form/after_field_wrapper', function( $form, $args ) {
+	echo '</div>';
+}, 10, 2 );
+
+// You may also use more specific filters to target a form either by its post ID or form key
+add_filter( "af/form/before_field_wrapper/id=$form_id", ... );
+add_filter( "af/form/before_field_wrapper/key=$form_key", ... );
+
+add_filter( "af/form/after_field_wrapper/id=$form_id", ... );
+add_filter( "af/form/after_field_wrapper/key=$form_key", ... );
+```
+
+If you wish to add custom markup before and after all the fields but not the submit button row, you may use the `af/form/before_fields` and `af/form/after_fields` hooks:
+
+```php
+add_filter( 'af/form/before_fields', function( $form, $args ) {
+	echo '<div class="my-custom-wrapper">';
+}, 10, 2 );
+
+add_filter( 'af/form/after_fields', function( $form, $args ) {
+	echo '</div>';
+}, 10, 2 );
+
+// You may also use more specific filters to target a form either by its post ID or form key
+add_filter( "af/form/before_fields/id=$form_id", ... );
+add_filter( "af/form/before_fields/key=$form_key", ... );
+
+add_filter( "af/form/after_fields/id=$form_id", ... );
+add_filter( "af/form/after_fields/key=$form_key", ... );
+```
 
 ## Adding HTML before and after field groups
 
