@@ -117,6 +117,26 @@ add_filter( "af/form/args/id=$form_id", ... );
 add_filter( "af/form/args/key=$form_key", ... );
 ```
 
+## Controlling the field instruction placement
+
+You may control where the instructions are rendered on a form using
+the [`instruction_placement` display argument](Display-arguments.md#instructionplacement).
+
+If you wish to do so via PHP, you may use the `af/field/instruction_placement` filter:
+
+```php
+add_filter( 'af/field/instruction_placement', function( $placement, $field, $form, $args ) {
+
+	$placement = 'field';
+
+	return $placement;
+}, 10, 4 );
+
+// You may also use more specific filters to target a field either by its name or key
+add_filter( "af/field/instruction_placement/name=$field_name", ... );
+add_filter( "af/field/instruction_placement/key=$field_key", ... );
+```
+
 ## Customizing the submit button text
 
 You may pass custom submit button text to the [`submit_text` display argument](Display-arguments.md#submittext) when
@@ -356,20 +376,93 @@ See [Prefilling form fields](Prefilling-form-fields.md).
 
 ## Modifying the ACF field array before render
 
-todo - document the `af/field/before_render` filter
+You may modify an ACF field array before it is rendered in a form using the `af/field/before_render` filter:
+
+```php
+add_filter( 'af/field/before_render', function( $field, $form, $args ) {	
+	// Restrict to a specific field
+	if ( $field['name'] !== 'my_field' ) {
+		return $field;
+	}
+	
+	// Override the field label
+	$field['label'] = 'My custom label';
+
+	// Override the placeholder
+	$field['placeholder'] = 'My custom placeholder';
+
+	// Set a max length
+	$field['maxlength'] = 20;
+	
+	// Change the field type
+	$field['type'] = 'password';
+	
+	// Mark a field as required
+	$field['required'] = true;
+	
+	// Mark a field as disabled
+	$field['disabled'] = true;
+	
+	return $field;
+}, 10, 3 );
+
+// You may also use more specific filters to target a field either by its field name or key
+add_filter( "af/field/before_render/name=$field_name", ... );
+add_filter( "af/field/before_render/key=$field_key", ... );
+```
+
+The above options are just a few examples of what is possible and the available options change depending on the field
+type so be sure to inspect the ACF field array to see what options are available. Not all options may work in a front
+end form so a degree of trial and error may be required.
+
+### How to make a field readonly
+
+Making a field readonly is possible but is field type dependent so you should inspect the ACF field type you are using
+to see what args are supported when ACF renders a field. For example, the following will make a text field readonly:
+
+```php
+add_filter( 'af/field/before_render/name=my_text_field', function( $field, $form, $args ) {	
+	$field['readonly'] = true;
+
+	return $field;
+}, 10, 3 );
+```
 
 ## Modifying the field wrapper attributes
 
-todo - document the `af/form/field_attributes`
+If you need to add custom or modify existing HTML attributes to a field's wrapper element, you may use
+the `af/form/field_attributes` filter:
+
+```php
+add_filter( 'af/form/field_attributes', function( $attributes, $field, $form, $args ) {
+	// Restrict to a specific field
+	if ( $field['name'] !== 'my_field' ) {
+		return $attributes;
+	}
+	
+	$attributes['data-foo'] = 'bar';
+
+	return $attributes;
+}, 10, 4 );
+
+// You may also use more specific filters to target a form either by its post ID or form key
+add_filter( "af/form/field_attributes/id=$form_id", ... );
+add_filter( "af/form/field_attributes/key=$form_key", ... );
+```
 
 ### Add custom CSS classes for CSS styling
 
-todo
+Advanced Forms adds classes such as `af-field` and `af-field-type-{$type}` to the field wrapper but you may add
+additional classes as follows:
 
-## Controlling the field instruction placement
+```php
+add_filter( 'af/form/field_attributes', function( $attributes, $field, $form, $args ) {
+	$attributes['class'] .= ' my-custom-class';
+	
+	return $attributes;
+}, 10, 4 );
 
-todo - mention the form arg
-todo - document the `af/field/instruction_placement` filter
+```
 
 ## Customise the form restricted output
 
