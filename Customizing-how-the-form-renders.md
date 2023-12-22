@@ -31,7 +31,7 @@ foreach ( $show_hooks as $hook ) {
 ## Excluding fields from the form
 
 You may wish to exclude certain fields from the form. This can be done using
-the [`exclude_fields` display argument](Display-arguments.md#excludefields).
+the [`exclude_fields` display argument](Display-arguments.md#exclude_fields).
 
 If you wish to do so using PHP, you may use the `af/form/args` filter to modify the display args:
 
@@ -95,7 +95,7 @@ add_filter( "af/form/before_render/key=$form_key", ... );
 ### Hiding the title and description
 
 When rendering a form, you may toggle the display of the title and description using the
-[`display_title` and `display_description` display arguments](Display-arguments.md#displaytitle).
+[`display_title` and `display_description` display arguments](Display-arguments.md#display_title).
 
 If you wish to do so using PHP, you may use the `af/form/args` filter to modify the display args:
 
@@ -120,7 +120,7 @@ add_filter( "af/form/args/key=$form_key", ... );
 ## Controlling the field instruction placement
 
 You may control where the instructions are rendered on a form using
-the [`instruction_placement` display argument](Display-arguments.md#instructionplacement).
+the [`instruction_placement` display argument](Display-arguments.md#instruction_placement).
 
 If you wish to do so via PHP, you may use the `af/field/instruction_placement` filter:
 
@@ -139,7 +139,7 @@ add_filter( "af/field/instruction_placement/key=$field_key", ... );
 
 ## Customizing the submit button text
 
-You may pass custom submit button text to the [`submit_text` display argument](Display-arguments.md#submittext) when
+You may pass custom submit button text to the [`submit_text` display argument](Display-arguments.md#submit_text) when
 displaying a form.
 
 If you wish to do so using PHP, you may use the `af/form/args` filter to modify the display args:
