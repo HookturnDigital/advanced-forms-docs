@@ -42,6 +42,7 @@ add_filter( 'af/form/args', function( $args, $form ) {
 		return $args;
 	}
 	
+	// Set the fields to exclude on form render
 	$args['exclude_fields'] = [
 		'my_field',
 		'my_second_field',
@@ -81,6 +82,7 @@ add_filter( 'af/form/before_render', function( $form, $args ) {
 		return;
 	}
 	
+	// Set the title and description
 	$form['title'] = 'My custom form title';
 	$form['display']['description'] = 'My custom form description message.';
 	
@@ -106,6 +108,7 @@ add_filter( 'af/form/args', function( $args, $form ) {
 		return $args;
 	}
 	
+	// Toggle the title and description off
 	$args['display_title'] = false;
 	$args['display_description'] = false;
 
@@ -127,6 +130,7 @@ If you wish to do so via PHP, you may use the `af/field/instruction_placement` f
 ```php
 add_filter( 'af/field/instruction_placement', function( $placement, $field, $form, $args ) {
 
+	// Set either field or label here
 	$placement = 'field';
 
 	return $placement;
@@ -151,6 +155,7 @@ add_filter( 'af/form/args', function( $args, $form ) {
 		return $args;
 	}
 	
+	// Set the submit button text. Simple HTML such as <span> tags will work here.
 	$args['submit_text'] = 'Send message';
 
 	return $args;
@@ -173,7 +178,7 @@ add_filter( 'af/form/attributes', function( $attributes, $form, $args ) {
 		return $attributes;
 	}
 	
-	//$attributes['class'] = 'my-custom-class';
+	// Set a custom attribute
 	$attributes['data-foo'] = 'bar';
 
 	return $attributes;
@@ -190,7 +195,7 @@ Advanced Forms adds the `af-form` class to the form wrapper but you may add addi
 
 ```php
 add_filter( 'af/form/attributes', function( $attributes, $form, $args ) {
-	
+	// Append a custom classs
 	$attributes['class'] .= ' my-custom-class';
 	
 	return $attributes;
@@ -359,7 +364,7 @@ You may also customise the success message with PHP using the `af/form/success_m
 
 ```php
 add_filter( 'af/form/success_message', function( $message, $form, $args ) {
-	
+	// Set the success message
 	$message = 'My custom success message';
 
 	return $message;
@@ -440,6 +445,7 @@ add_filter( 'af/form/field_attributes', function( $attributes, $field, $form, $a
 		return $attributes;
 	}
 	
+	// Set a custom attribute
 	$attributes['data-foo'] = 'bar';
 
 	return $attributes;
@@ -457,6 +463,7 @@ additional classes as follows:
 
 ```php
 add_filter( 'af/form/field_attributes', function( $attributes, $field, $form, $args ) {
+	// Append a custom class
 	$attributes['class'] .= ' my-custom-class';
 	
 	return $attributes;
