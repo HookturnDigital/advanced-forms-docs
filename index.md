@@ -20,7 +20,7 @@
 ## Advanced Usage
 
 - [Registering forms programmatically](Registering-forms-programmatically.md)
-- todo [Customizing how the form renders](Customizing-how-the-form-renders.md)
+- wip [Customizing how the form renders](Customizing-how-the-form-renders.md)
 - [Prefilling form fields](Prefilling-form-fields.md)
 - [Creating and editing posts](Creating-and-editing-posts.md)
 - [Creating and editing users](Creating-and-editing-users.md)
