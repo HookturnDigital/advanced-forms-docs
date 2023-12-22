@@ -239,7 +239,8 @@ add_filter( "af/form/after_field_wrapper/id=$form_id", ... );
 add_filter( "af/form/after_field_wrapper/key=$form_key", ... );
 ```
 
-If you wish to add custom markup before and after all the fields but not the submit button row, you may use the `af/form/before_fields` and `af/form/after_fields` hooks:
+If you wish to add custom markup before and after all the fields but not the submit button row, you may use
+the `af/form/before_fields` and `af/form/after_fields` hooks:
 
 ```php
 add_filter( 'af/form/before_fields', function( $form, $args ) {
@@ -260,15 +261,94 @@ add_filter( "af/form/after_fields/key=$form_key", ... );
 
 ## Adding HTML before and after field groups
 
-todo - document `af/field_group/before_field_group` and `af/field_group/after_field_group` hooks.
+A an Advanced Forms form can contain multiple field groups. If you wish to add custom markup before and after each field
+group, you may use the `af/field_group/before_field_group` and `af/field_group/after_field_group` hooks.
+
+Note that these hooks don't yet have specific variations so it is necessary to check for a specific form or field group
+for controlling when the markup should render.
+
+[htdocs_highlight]
+
+**Important:**
+
+These hooks offer a lot of flexibility but modifying the markup may negatively affect the JavaScript that manages
+multi-stage forms. Be mindful of this when using these hooks.
+
+[/htdocs_highlight]
+
+```php
+add_filter( 'af/field_group/before_field_group', function( $field_group, $form, $args ) {
+	// Restrict to a specific form
+	if( $form['key'] !== 'form_62bd15508b9c9' ){
+		return;
+	}
+	echo '<div class="my-custom-field-group-wrapper">';
+}, 10, 3 );
+
+add_filter( 'af/field_group/after_field_group', function( $field_group, $form, $args ) {
+	// Restrict to a specific form
+	if( $form['key'] !== 'form_62bd15508b9c9' ){
+		return;
+	}
+	echo '</div>';
+}, 10, 3 );
+```
 
 ## Adding HTML before and after fields
 
-todo - document the `af/field/before_field` and `af/field/after_field` hooks.
+If you wish to add custom markup before and after each field, you may use the `af/field/before_field`
+and `af/field/after_field` hooks.
+
+```php
+add_filter( 'af/field/before_field', function( $field, $form, $args ) {
+	echo '<div class="my-custom-field-wrapper">';
+}, 10, 3 );
+
+add_filter( 'af/field/after_field', function( $field, $form, $args ) {
+	echo '</div>';
+}, 10, 3 );
+```
+
+Advanced Forms already wraps fields in `<div>` elements but you may add additional wrapper markup as needed or you may
+wish to include some custom markup before or after a specific field:
+
+```php
+add_filter( 'af/field/before_field', function( $field, $form, $args ) {
+	if( $field['name'] === 'my_field_name' ){
+		echo '<p>Some custom element</p>';
+	}
+}, 10, 3 );
+```
+
+[htdocs_highlight]
+
+**Important:**
+
+These hooks offer a lot of flexibility but modifying the markup may negatively affect the JavaScript that manages
+multi-stage forms. Be mindful of this when using these hooks.
+
+[/htdocs_highlight]
 
 ## Customizing the form success message
 
-todo - document the `af/form/success_message` filter
+The form success message can be defined on the form edit screen as follows:
+
+![advanced-forms-pro-for-acf-success-message-setting.jpg](images/advanced-forms-pro-for-acf-success-message-setting.jpg)
+
+You may also customise the success message with PHP using the `af/form/success_message` filter:
+
+```php
+add_filter( 'af/form/success_message', function( $message, $form, $args ) {
+	
+	$message = 'My custom success message';
+
+	return $message;
+}, 10, 3 );
+
+// You may also use more specific filters to target a form either by its post ID or form key
+add_filter( "af/form/success_message/id=$form_id", ... );
+add_filter( "af/form/success_message/key=$form_key", ... );
+```
 
 ## Prefilling form fields
 
