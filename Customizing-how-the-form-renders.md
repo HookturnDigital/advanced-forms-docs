@@ -106,9 +106,6 @@ add_filter( 'af/form/args', function( $args, $form ) {
 	}
 	
 	$args['submit_text'] = 'Send message';
-	
-	// You may also include HTML
-	$args['submit_text'] = 'Send message <span class="dashicons dashicons-email"></span>';
 
 	return $args;
 }, 10, 2 );
