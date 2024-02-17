@@ -26,6 +26,7 @@
 - [Creating and editing users](Creating-and-editing-users.md)
 - todo [Working with calculated fields](Working-with-calculated-fields.md)
 - todo [Processing form submissions](Processing-form-submissions.md)
+- [Filtering submitted values](Filtering-submitted-values.md)
 - todo [Working with merge tags](Working-with-merge-tags.md)
 - todo [Restricting access to a form](Restricting-access-to-a-form.md)
 - todo [Customizing the form template](Customizing-the-form-template.md)
