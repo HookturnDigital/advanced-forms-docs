@@ -64,6 +64,7 @@
 - todo [How to create multiple posts with a single form submission](How-to-create-multiple-posts-with-a-single-form-submission.md)
 - todo [Calculating values across repeater fields](Calculating-values-across-repeater-fields.md)
 - todo [How to display a form in a modal](How-to-display-a-form-in-a-modal.md)
+- todo [How to show a success message when using filter mode](How-to-show-a-success-message-when-using-filter-mode.md)
 
 ## Tools
 
