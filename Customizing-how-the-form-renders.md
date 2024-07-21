@@ -65,6 +65,10 @@ is available in our support documents:
 
 [How to exclude sub fields from rendering in a form](https://hookturn.freshdesk.com/support/solutions/articles/44002397391)
 
+## Reordering & modifying field groups
+
+See [Filtering form field groups](Filtering-form-field-groups.md).
+
 ## Controlling the form title and description
 
 ### Setting the title and description
@@ -481,4 +485,5 @@ See [Restricting access to a form](Restricting-access-to-a-form.md).
 - [Working with hidden fields](Working-with-hidden-fields.md)
 - [Restricting access to a form](Restricting-access-to-a-form.md)
 - [Prefilling form fields](Prefilling-form-fields.md)
+- [Filtering form field groups](Filtering-form-field-groups.md)
 - [How to exclude sub fields from rendering in a form](https://hookturn.freshdesk.com/support/solutions/articles/44002397391)
