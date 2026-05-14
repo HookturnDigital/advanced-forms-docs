@@ -947,6 +947,76 @@
 					"Third Party Compatibility"
 				]
 			}
+		},
+		"Use-a-custom-URL-parameter-to-edit-a-specific-post-ID.md": {
+			"post_title": "Use a custom URL parameter to edit a specific post ID",
+			"post_name": "edit-post-by-url-parameter",
+			"meta": {
+				"rank_math_title": "Edit a specific post via a URL parameter — Advanced Forms for ACF",
+				"rank_math_description": "Set the form's post arg to 'param' so Advanced Forms reads the target post ID from a query parameter — useful for create-then-edit flows and per-post edit links.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-pre-fill-form-field-values.md": {
+			"post_title": "How to pre-fill form field values",
+			"post_name": "pre-fill-form-field-values",
+			"meta": {
+				"rank_math_title": "Pre-fill Advanced Forms field values — values arg + prefill_value filter",
+				"rank_math_description": "Two ways to pre-fill Advanced Forms fields: pass a values array to advanced_form(), or hook af/field/prefill_value for programmatic per-field control.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-access-the-post-ID-after-a-post-is-created.md": {
+			"post_title": "How to access the post ID after a post is created",
+			"post_name": "access-post-id-after-creation",
+			"meta": {
+				"rank_math_title": "Access the new post ID after Advanced Forms creates or updates a post",
+				"rank_math_description": "Read the created or updated post ID from AF()->submission['post'], plus the dedicated post_created and post_updated hooks for clean per-mode handling.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-enable-all-pages-on-page-load-for-a-multi-page-form.md": {
+			"post_title": "How to enable all pages on page load for a multi-page form",
+			"post_name": "enable-all-pages-on-load",
+			"meta": {
+				"rank_math_title": "Make every page navigable from page load on an Advanced Forms multi-page form",
+				"rank_math_description": "A short JavaScript snippet that bumps max_page on form setup so every page in a multi-page Advanced Forms form is reachable from page load.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-show-form-entry-data-on-a-thank-you-page-after-form-submission.md": {
+			"post_title": "How to show form entry data on a 'thank you' page after form submission",
+			"post_name": "show-entry-data-on-thank-you-page",
+			"meta": {
+				"rank_math_title": "Show a submission summary on the redirect / thank-you page",
+				"rank_math_description": "Use af_get_field() on the redirect target to render submitted values back to the visitor, with gotchas around trailing-slash redirects and page caching.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
 		}
 	}
 }
