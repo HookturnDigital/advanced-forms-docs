@@ -383,10 +383,9 @@
 		"Customizing-the-form-success-message.md": {
 			"post_title": "Customizing the form success message",
 			"post_name": "customizing-the-form-success-message",
-			"post_status": "draft",
 			"meta": {
-				"rank_math_title": "",
-				"rank_math_description": "",
+				"rank_math_title": "Customising the form success message — Advanced Forms",
+				"rank_math_description": "Override Advanced Forms' success message in PHP with the af/form/success_message filter, including how to set it dynamically from a submission handler.",
 				"rank_math_canonical_url": ""
 			},
 			"taxonomies": {
@@ -1785,6 +1784,76 @@
 			"taxonomies": {
 				"doc_section": [
 					"Troubleshooting"
+				]
+			}
+		},
+		"How-to-set-the-post-slug-post-name-when-creating-or-editing-a-post.md": {
+			"post_title": "How to set the post slug (post name) when creating or editing a post",
+			"post_name": "set-post-slug-advanced-forms",
+			"meta": {
+				"rank_math_title": "Set the post slug (post_name) in Advanced Forms for ACF",
+				"rank_math_description": "Customise the post_name (URL slug) when Advanced Forms for ACF creates or edits a post. Use the af/form/editing/post_data filter with sanitize_title().",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-skip-a-form-stage-in-a-multi-stage-form.md": {
+			"post_title": "How to skip a form stage in a multi-stage form",
+			"post_name": "skip-a-form-stage",
+			"meta": {
+				"rank_math_title": "Skip a stage in a multi-stage form — Advanced Forms",
+				"rank_math_description": "Skip stages in an Advanced Forms multi-stage form using the af/form/page_changed JS action — by custom condition or when all fields on a stage are hidden.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-create-multiple-users-with-a-single-form-submission.md": {
+			"post_title": "How to create multiple users with a single form submission",
+			"post_name": "create-multiple-users-single-submission",
+			"meta": {
+				"rank_math_title": "Create multiple users from one form submission — Advanced Forms",
+				"rank_math_description": "Use a repeater field plus a custom af/form/submission handler to create multiple WordPress users from a single Advanced Forms Pro submission.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-trigger-FacetWPs-indexer-for-posts-managed-by-an-ACF-form.md": {
+			"post_title": "How to trigger FacetWP's indexer for posts managed by an ACF form",
+			"post_name": "trigger-facetwp-indexer-for-acf-form-posts",
+			"meta": {
+				"rank_math_title": "Trigger FacetWP indexer for ACF form posts — Advanced Forms",
+				"rank_math_description": "Keep FacetWP's index in sync when Advanced Forms creates or updates posts — a small PHP snippet that calls FWP()->indexer->index() on submission.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Third Party Notes"
+				]
+			}
+		},
+		"Error-when-using-ACF-Extended-Date-Range-Picker-field.md": {
+			"post_title": "Error when using ACF Extended 'Date Range Picker' field",
+			"post_name": "error-acf-extended-date-range-picker",
+			"meta": {
+				"rank_math_title": "Fix ACF Extended Date Range Picker error in Advanced Forms",
+				"rank_math_description": "Resolve PHP warnings and TypeError fatals from ACF Extended's Date Range Picker field on Advanced Forms submission with a small acf/pre_format_value filter.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Third Party Notes"
 				]
 			}
 		}
