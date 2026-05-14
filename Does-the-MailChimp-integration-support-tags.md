@@ -1,6 +1,6 @@
 # Does the MailChimp integration support tags?
 
-Yes — tags can be added via PHP. The MailChimp integration's UI only exposes list, name, and email address, but the [`af/form/mailchimp/request`](https://advancedforms.github.io/filters/af/form/mailchimp/request/) filter lets you modify the outgoing API request before it's sent, so you can append tags (or any other field MailChimp's API supports) programmatically.
+Yes — tags can be added via PHP. The MailChimp integration's UI only exposes list, name, and email address, but the [`af/form/mailchimp/request`](../af-form-mailchimp-request/) filter lets you modify the outgoing API request before it's sent, so you can append tags (or any other field MailChimp's API supports) programmatically.
 
 The full PHP example lives in the MailChimp doc: [_How to add tags using PHP_](./mailchimp/#how-to-add-tags-using-php).
 

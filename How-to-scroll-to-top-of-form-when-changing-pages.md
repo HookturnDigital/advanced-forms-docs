@@ -1,6 +1,6 @@
 # How to scroll to top of form when changing pages
 
-On long multi-page forms, page transitions can leave the user mid-page with the new page's start above the fold. To smooth-scroll back to the top of the form on every page change, hook the [`af/form/page_changed`](https://advancedforms.github.io/actions/af/form/page_changed/) JavaScript action:
+On long multi-page forms, page transitions can leave the user mid-page with the new page's start above the fold. To smooth-scroll back to the top of the form on every page change, hook the [`af/form/page_changed`](../af-form-page_changed/) JavaScript action:
 
 ```js
 jQuery(function ($) {

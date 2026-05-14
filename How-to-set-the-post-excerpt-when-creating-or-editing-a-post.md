@@ -1,6 +1,6 @@
 # How to set the post excerpt when creating or editing a post
 
-The [`af/form/editing/post_data`](https://advancedforms.github.io/filters/af/form/editing/post_data/) filter lets you customise any post property — including `post_excerpt` — before Advanced Forms saves it. The filter applies on both create and edit.
+The [`af/form/editing/post_data`](../af-form-editing-post_data/) filter lets you customise any post property — including `post_excerpt` — before Advanced Forms saves it. The filter applies on both create and edit.
 
 The following snippet takes the value from a submitted field and assigns it to the new post's excerpt:
 

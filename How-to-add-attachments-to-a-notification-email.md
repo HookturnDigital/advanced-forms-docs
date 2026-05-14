@@ -1,6 +1,6 @@
 # How to add attachments to a notification email
 
-Use the [`af/form/email/attachments`](https://advancedforms.github.io/filters/af/form/email/attachments/) filter to add file paths to a notification email's attachments array. Each entry is an absolute server path; the file is attached via `wp_mail()`'s standard attachment mechanism.
+Use the [`af/form/email/attachments`](../af-form-email-attachments/) filter to add file paths to a notification email's attachments array. Each entry is an absolute server path; the file is attached via `wp_mail()`'s standard attachment mechanism.
 
 ```php
 add_filter( 'af/form/email/attachments', function ( $attachments, $email, $form, $fields ) {

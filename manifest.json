@@ -90,64 +90,6 @@
 				]
 			}
 		},
-		"Display-arguments.md": {
-			"post_title": "Display arguments",
-			"post_name": "display-arguments",
-			"meta": {
-				"rank_math_title": "",
-				"rank_math_description": "",
-				"rank_math_canonical_url": ""
-			},
-			"taxonomies": {
-				"doc_section": [
-					"Reference"
-				]
-			}
-		},
-		"Functions-reference.md": {
-			"post_title": "Functions reference",
-			"post_name": "functions",
-			"meta": {
-				"rank_math_title": "",
-				"rank_math_description": "",
-				"rank_math_canonical_url": ""
-			},
-			"taxonomies": {
-				"doc_section": [
-					"Reference"
-				]
-			}
-		},
-		"Hooks-reference.md": {
-			"post_title": "Hooks reference",
-			"post_name": "hooks",
-			"post_status": "draft",
-			"meta": {
-				"rank_math_title": "",
-				"rank_math_description": "",
-				"rank_math_canonical_url": ""
-			},
-			"taxonomies": {
-				"doc_section": [
-					"Reference"
-				]
-			}
-		},
-		"Troubleshooting.md": {
-			"post_title": "Troubleshooting",
-			"post_name": "troubleshooting",
-			"post_status": "draft",
-			"meta": {
-				"rank_math_title": "",
-				"rank_math_description": "",
-				"rank_math_canonical_url": ""
-			},
-			"taxonomies": {
-				"doc_section": [
-					"Reference"
-				]
-			}
-		},
 		"Registering-forms-programmatically.md": {
 			"post_title": "Registering forms programmatically",
 			"post_name": "registering-forms-programmatically",
@@ -2036,6 +1978,595 @@
 			"taxonomies": {
 				"doc_section": [
 					"FAQs"
+				]
+			}
+		},
+		"Functions-reference.md": {
+			"post_title": "Functions reference",
+			"post_name": "functions",
+			"meta": {
+				"rank_math_title": "",
+				"rank_math_description": "",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Display-arguments.md": {
+			"post_title": "Display arguments",
+			"post_name": "display-arguments",
+			"meta": {
+				"rank_math_title": "",
+				"rank_math_description": "",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-email-after_send.md": {
+			"post_title": "af/email/after_send",
+			"post_name": "af-email-after_send",
+			"meta": {
+				"rank_math_title": "af/email/after_send | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/email/after_send action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-email-before_send.md": {
+			"post_title": "af/email/before_send",
+			"post_name": "af-email-before_send",
+			"meta": {
+				"rank_math_title": "af/email/before_send | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/email/before_send action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-field-before_render.md": {
+			"post_title": "af/field/before_render",
+			"post_name": "af-field-before_render",
+			"meta": {
+				"rank_math_title": "af/field/before_render | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/field/before_render filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-field-calculate_value.md": {
+			"post_title": "af/field/calculate_value",
+			"post_name": "af-field-calculate_value",
+			"meta": {
+				"rank_math_title": "af/field/calculate_value | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/field/calculate_value filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-field-calculated-update_value.md": {
+			"post_title": "af/field/calculated/update_value",
+			"post_name": "af-field-calculated-update_value",
+			"meta": {
+				"rank_math_title": "af/field/calculated/update_value | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/field/calculated/update_value action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-field-calculated-value_updated.md": {
+			"post_title": "af/field/calculated/value_updated",
+			"post_name": "af-field-calculated-value_updated",
+			"meta": {
+				"rank_math_title": "af/field/calculated/value_updated | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/field/calculated/value_updated JavaScript action in Advanced Forms for ACF — fires after a calculated field has been refreshed.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-field-prefill_value.md": {
+			"post_title": "af/field/prefill_value",
+			"post_name": "af-field-prefill_value",
+			"meta": {
+				"rank_math_title": "af/field/prefill_value | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/field/prefill_value filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-after_fields.md": {
+			"post_title": "af/form/after_fields",
+			"post_name": "af-form-after_fields",
+			"meta": {
+				"rank_math_title": "af/form/after_fields | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/after_fields action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-args.md": {
+			"post_title": "af/form/args",
+			"post_name": "af-form-args",
+			"meta": {
+				"rank_math_title": "af/form/args | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/args filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-before_fields.md": {
+			"post_title": "af/form/before_fields",
+			"post_name": "af-form-before_fields",
+			"meta": {
+				"rank_math_title": "af/form/before_fields | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/before_fields action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-before_render.md": {
+			"post_title": "af/form/before_render",
+			"post_name": "af-form-before_render",
+			"meta": {
+				"rank_math_title": "af/form/before_render | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/before_render filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-before_submission.md": {
+			"post_title": "af/form/before_submission",
+			"post_name": "af-form-before_submission",
+			"meta": {
+				"rank_math_title": "af/form/before_submission | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/before_submission action in Advanced Forms for ACF — fires before submission handlers run; use with af_add_submission_error() to halt.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-before_title.md": {
+			"post_title": "af/form/before_title",
+			"post_name": "af-form-before_title",
+			"meta": {
+				"rank_math_title": "af/form/before_title | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/before_title action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-button_attributes.md": {
+			"post_title": "af/form/button_attributes",
+			"post_name": "af-form-button_attributes",
+			"meta": {
+				"rank_math_title": "af/form/button_attributes | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/button_attributes filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-editing-post_created.md": {
+			"post_title": "af/form/editing/post_created",
+			"post_name": "af-form-editing-post_created",
+			"meta": {
+				"rank_math_title": "af/form/editing/post_created | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/editing/post_created action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-editing-post_data.md": {
+			"post_title": "af/form/editing/post_data",
+			"post_name": "af-form-editing-post_data",
+			"meta": {
+				"rank_math_title": "af/form/editing/post_data | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/editing/post_data filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-editing-post_updated.md": {
+			"post_title": "af/form/editing/post_updated",
+			"post_name": "af-form-editing-post_updated",
+			"meta": {
+				"rank_math_title": "af/form/editing/post_updated | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/editing/post_updated action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-editing-query_param.md": {
+			"post_title": "af/form/editing/query_param",
+			"post_name": "af-form-editing-query_param",
+			"meta": {
+				"rank_math_title": "af/form/editing/query_param | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/editing/query_param filter — customise the URL query parameter used to identify the post a form should edit.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-editing-user_created.md": {
+			"post_title": "af/form/editing/user_created",
+			"post_name": "af-form-editing-user_created",
+			"meta": {
+				"rank_math_title": "af/form/editing/user_created | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/editing/user_created action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-editing-user_data.md": {
+			"post_title": "af/form/editing/user_data",
+			"post_name": "af-form-editing-user_data",
+			"meta": {
+				"rank_math_title": "af/form/editing/user_data | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/editing/user_data filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-editing-user_updated.md": {
+			"post_title": "af/form/editing/user_updated",
+			"post_name": "af-form-editing-user_updated",
+			"meta": {
+				"rank_math_title": "af/form/editing/user_updated | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/editing/user_updated action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-email-attachments.md": {
+			"post_title": "af/form/email/attachments",
+			"post_name": "af-form-email-attachments",
+			"meta": {
+				"rank_math_title": "af/form/email/attachments | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/email/attachments filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-email-content.md": {
+			"post_title": "af/form/email/content",
+			"post_name": "af-form-email-content",
+			"meta": {
+				"rank_math_title": "af/form/email/content | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/email/content filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-email-headers.md": {
+			"post_title": "af/form/email/headers",
+			"post_name": "af-form-email-headers",
+			"meta": {
+				"rank_math_title": "af/form/email/headers | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/email/headers filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-email-recipient.md": {
+			"post_title": "af/form/email/recipient",
+			"post_name": "af-form-email-recipient",
+			"meta": {
+				"rank_math_title": "af/form/email/recipient | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/email/recipient filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-email-styles.md": {
+			"post_title": "af/form/email/styles",
+			"post_name": "af-form-email-styles",
+			"meta": {
+				"rank_math_title": "af/form/email/styles | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/email/styles filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-email-subject.md": {
+			"post_title": "af/form/email/subject",
+			"post_name": "af-form-email-subject",
+			"meta": {
+				"rank_math_title": "af/form/email/subject | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/email/subject filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-entry_created.md": {
+			"post_title": "af/form/entry_created",
+			"post_name": "af-form-entry_created",
+			"meta": {
+				"rank_math_title": "af/form/entry_created | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/entry_created action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-field_attributes.md": {
+			"post_title": "af/form/field_attributes",
+			"post_name": "af-form-field_attributes",
+			"meta": {
+				"rank_math_title": "af/form/field_attributes | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/field_attributes filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-hidden_fields.md": {
+			"post_title": "af/form/hidden_fields",
+			"post_name": "af-form-hidden_fields",
+			"meta": {
+				"rank_math_title": "af/form/hidden_fields | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/hidden_fields action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-mailchimp-request.md": {
+			"post_title": "af/form/mailchimp/request",
+			"post_name": "af-form-mailchimp-request",
+			"meta": {
+				"rank_math_title": "af/form/mailchimp/request | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/mailchimp/request filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-next_button_atts.md": {
+			"post_title": "af/form/next_button_atts",
+			"post_name": "af-form-next_button_atts",
+			"meta": {
+				"rank_math_title": "af/form/next_button_atts | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/next_button_atts filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-page_changed.md": {
+			"post_title": "af/form/page_changed",
+			"post_name": "af-form-page_changed",
+			"meta": {
+				"rank_math_title": "af/form/page_changed | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/page_changed action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-previous_button_atts.md": {
+			"post_title": "af/form/previous_button_atts",
+			"post_name": "af-form-previous_button_atts",
+			"meta": {
+				"rank_math_title": "af/form/previous_button_atts | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/previous_button_atts filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-restriction.md": {
+			"post_title": "af/form/restriction",
+			"post_name": "af-form-restriction",
+			"meta": {
+				"rank_math_title": "af/form/restriction | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/restriction filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-submission.md": {
+			"post_title": "af/form/submission",
+			"post_name": "af-form-submission",
+			"meta": {
+				"rank_math_title": "af/form/submission | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/submission action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-success_message.md": {
+			"post_title": "af/form/success_message",
+			"post_name": "af-form-success_message",
+			"meta": {
+				"rank_math_title": "af/form/success_message | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/success_message filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-validate.md": {
+			"post_title": "af/form/validate",
+			"post_name": "af-form-validate",
+			"meta": {
+				"rank_math_title": "af/form/validate | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/validate action in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Reference/af-form-zapier-request.md": {
+			"post_title": "af/form/zapier/request",
+			"post_name": "af-form-zapier-request",
+			"meta": {
+				"rank_math_title": "af/form/zapier/request | Advanced Forms for ACF hook reference",
+				"rank_math_description": "Reference for the af/form/zapier/request filter in Advanced Forms for ACF, with signature, example, and modifiers.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
+				]
+			}
+		},
+		"Troubleshooting.md": {
+			"post_title": "Troubleshooting",
+			"post_name": "troubleshooting",
+			"post_status": "draft",
+			"meta": {
+				"rank_math_title": "",
+				"rank_math_description": "",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Reference"
 				]
 			}
 		}

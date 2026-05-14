@@ -4,7 +4,7 @@
 
 **Cause:** Advanced Forms ships with a hidden honeypot field that's expected to stay empty — if it has a value at submission time, AF treats the request as a bot and rejects it. Some browsers ignore `autocomplete="off"` on hidden inputs and helpfully autofill the honeypot with the user's name, email, or address from saved profile data. The form is then "invalid" through no fault of the user.
 
-**Fix:** Override the honeypot config so the field name / attributes don't look like something the browser wants to autofill — or disable the honeypot entirely on that form and rely on other bot protection. Both are configured via the `af/form/args` filter (the same filter documented under [honeypot arguments in the AF guides](https://advancedforms.github.io/guides/available-arguments/#honeypot)).
+**Fix:** Override the honeypot config so the field name / attributes don't look like something the browser wants to autofill — or disable the honeypot entirely on that form and rely on other bot protection. Both are configured via the `af/form/args` filter (the same filter documented under [honeypot arguments in the AF guides](../display-arguments/#honeypot)).
 
 Rename the honeypot field to something the browser won't recognise as a known profile field:
 

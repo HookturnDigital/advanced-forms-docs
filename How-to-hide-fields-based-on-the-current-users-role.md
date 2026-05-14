@@ -1,6 +1,6 @@
 # How to hide fields based on the current user's role
 
-To prevent a field from rendering based on the current user's role, return `false` from the [`af/field/before_render`](https://advancedforms.github.io/filters/af/field/before_render/) filter.
+To prevent a field from rendering based on the current user's role, return `false` from the [`af/field/before_render`](../af-field-before_render/) filter.
 
 ```php
 add_filter( 'af/field/before_render', function ( $field, $form, $args ) {

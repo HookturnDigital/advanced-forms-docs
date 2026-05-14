@@ -1,6 +1,6 @@
 # How to pre-fill fields from values in a URL query string
 
-To pre-fill a field from a URL query parameter — e.g. `?my-custom-param=some-value` — read `$_GET` inside the [`af/field/prefill_value`](https://advancedforms.github.io/filters/af/field/prefill_value/) filter and return the matching value for the target field.
+To pre-fill a field from a URL query parameter — e.g. `?my-custom-param=some-value` — read `$_GET` inside the [`af/field/prefill_value`](../af-field-prefill_value/) filter and return the matching value for the target field.
 
 ```php
 add_filter( 'af/field/prefill_value', function ( $value, $field, $form, $args ) {

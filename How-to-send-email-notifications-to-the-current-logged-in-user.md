@@ -1,6 +1,6 @@
 # How to send email notifications to the current logged-in user
 
-To send a notification to whoever's logged in at submission time — without hard-coding any email addresses — override the recipient in [`af/form/email/recipient`](https://advancedforms.github.io/filters/af/form/email/recipient/):
+To send a notification to whoever's logged in at submission time — without hard-coding any email addresses — override the recipient in [`af/form/email/recipient`](../af-form-email-recipient/):
 
 ```php
 add_filter( 'af/form/email/recipient', function ( $recipient, $email, $form, $fields ) {

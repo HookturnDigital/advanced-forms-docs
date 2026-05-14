@@ -4,9 +4,9 @@ PDF generation isn't a built-in feature of Advanced Forms, but it's straightforw
 
 The basic process:
 
-1. Generate a PDF via PHP, pulling field values with [`af_get_field()`](https://advancedforms.github.io/functions/#af_get_field).
+1. Generate a PDF via PHP, pulling field values with [`af_get_field()`](../functions/#af_get_field).
 2. Save the PDF to a file on the server (somewhere under `wp-content/uploads/` works well).
-3. Return the absolute file path from the [`af/form/email/attachments`](https://advancedforms.github.io/filters/af/form/email/attachments/) filter to attach it to the notification email.
+3. Return the absolute file path from the [`af/form/email/attachments`](../af-form-email-attachments/) filter to attach it to the notification email.
 
 For the attachment step, see [_How to add attachments to a notification email_](./how-to-add-attachments-to-a-notification-email/) — the pattern is the same as attaching any other file, the only difference is that you're generating the file on the fly during submission rather than pointing at a pre-existing one.
 

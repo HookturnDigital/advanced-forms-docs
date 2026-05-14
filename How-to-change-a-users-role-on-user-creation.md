@@ -1,6 +1,6 @@
 # How to conditionally modify the user role on user creation
 
-When using a form to create users, you can adjust the role based on what was submitted using the [`af/form/editing/user_data`](https://advancedforms.github.io/filters/af/form/editing/user_data/) filter — and `af_get_field()` to read the submitted values:
+When using a form to create users, you can adjust the role based on what was submitted using the [`af/form/editing/user_data`](../af-form-editing-user_data/) filter — and `af_get_field()` to read the submitted values:
 
 ```php
 add_filter( 'af/form/editing/user_data', function ( $user_data, $form, $args ) {

@@ -1,6 +1,6 @@
 # How to exclude sub-fields from rendering in a form
 
-Advanced Forms' [`exclude_fields`](https://advancedforms.github.io/guides/available-arguments/#exclude_fields) arg only applies to top-level fields — sub-fields inside groups, repeaters, and flexible-content fields aren't evaluated against it. If you need to exclude sub-fields, the snippet below extends the behaviour recursively by patching ACF's `load_fields` during form rendering.
+Advanced Forms' [`exclude_fields`](../display-arguments/#exclude_fields) arg only applies to top-level fields — sub-fields inside groups, repeaters, and flexible-content fields aren't evaluated against it. If you need to exclude sub-fields, the snippet below extends the behaviour recursively by patching ACF's `load_fields` during form rendering.
 
 ```php
 <?php

@@ -1,6 +1,6 @@
 # How to show a notice above the form when using filter mode
 
-When using **filter mode** to keep a form in place after submission (e.g. for a profile-edit form), Advanced Forms doesn't render a confirmation message by default. Add one yourself using [`af/form/before_title`](https://advancedforms.github.io/actions/af/form/before_title/):
+When using **filter mode** to keep a form in place after submission (e.g. for a profile-edit form), Advanced Forms doesn't render a confirmation message by default. Add one yourself using [`af/form/before_title`](../af-form-before_title/):
 
 ```php
 add_action( 'af/form/before_title', function ( $form, $args ) {
@@ -23,7 +23,7 @@ add_action( 'af/form/before_title', function ( $form, $args ) {
 }, 10, 2 );
 ```
 
-Several `af/form/before_*` and `af/form/after_*` hooks exist if `before_title` isn't the right placement — see [Customizing how the form renders](https://advancedforms.github.io/guides/customizing-how-the-form-renders/) for the full list.
+Several `af/form/before_*` and `af/form/after_*` hooks exist if `before_title` isn't the right placement — see [Customizing how the form renders](../customizing-how-the-form-renders/) for the full list.
 
 ## AJAX-submitted forms
 

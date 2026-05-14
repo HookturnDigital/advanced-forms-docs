@@ -4,7 +4,7 @@
 
 **Cause:** We've had a report that certain characters in the subject line can trip an encoding issue specific to Apple Mail. In the reported case, the culprit was commas in the subject — removing them resolved the display and the subject rendered correctly again. We haven't catalogued every character that triggers this, so treat it as "Apple Mail is fussy about subject-line encoding under some conditions" rather than a hard rule.
 
-**Fix:** Avoid the offending characters in the subject, or strip/replace them programmatically before the email is sent using the [`af/form/email/subject`](https://advancedforms.github.io/filters/af/form/email/subject/) filter.
+**Fix:** Avoid the offending characters in the subject, or strip/replace them programmatically before the email is sent using the [`af/form/email/subject`](../af-form-email-subject/) filter.
 
 ```php
 add_filter( 'af/form/email/subject', function ( $subject, $email, $form, $args ) {

@@ -2,7 +2,7 @@
 
 You can force a calculated field to recalculate from JavaScript — useful when the calculation depends on something that doesn't fire ACF's default change events (a custom UI element, an async data source, etc.).
 
-The full pattern is in the ACF docs: [Extending calculated fields with JavaScript](https://advancedforms.github.io/guides/using-calculated-fields/#extending-calculated-fields-with-javascript).
+The full pattern is in the ACF docs: [Extending calculated fields with JavaScript](../working-with-calculated-fields/#extending-calculated-fields-with-javascript).
 
 ## Watch the request volume
 

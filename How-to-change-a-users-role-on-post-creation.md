@@ -1,6 +1,6 @@
 # How to change a user's role on post creation
 
-To change the post author's user role after a form creates a post, hook into [`af/form/editing/post_created`](https://advancedforms.github.io/actions/af/form/editing/post_created/) and call `wp_update_user()`:
+To change the post author's user role after a form creates a post, hook into [`af/form/editing/post_created`](../af-form-editing-post_created/) and call `wp_update_user()`:
 
 ```php
 add_action( 'af/form/editing/post_created', function ( $post, $form, $args ) {

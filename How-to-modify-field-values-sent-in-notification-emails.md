@@ -1,6 +1,6 @@
 # How to modify field values sent in notification emails
 
-Field formatting in email notifications follows the field's **Return Format** setting in ACF — and there's no per-email override built in. The cleanest way to render a value differently in an email is to [register a custom merge tag](https://advancedforms.github.io/guides/adding-custom-merge-tags/) that resolves to the format you want, then use the merge tag in the notification's content.
+Field formatting in email notifications follows the field's **Return Format** setting in ACF — and there's no per-email override built in. The cleanest way to render a value differently in an email is to [register a custom merge tag](../working-with-merge-tags/) that resolves to the format you want, then use the merge tag in the notification's content.
 
 For example: a radio field with **Return Format** set to **Both (Array)** produces output like `value, Label` in notifications. To display only the label, hook `af/merge_tags/resolve` and return the label slice of the array:
 

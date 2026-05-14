@@ -1,6 +1,6 @@
 # How to provide an option to save a post as a draft
 
-To let the user choose whether a form-created post is published immediately or saved as a draft, add a field with explicit options for the post status, then read it in [`af/form/editing/post_data`](https://advancedforms.github.io/filters/af/form/editing/post_data/) to set `post_status` accordingly.
+To let the user choose whether a form-created post is published immediately or saved as a draft, add a field with explicit options for the post status, then read it in [`af/form/editing/post_data`](../af-form-editing-post_data/) to set `post_status` accordingly.
 
 For the example below: add an ACF radio field named `publish_when` with two choices — `now` and `later`.
 

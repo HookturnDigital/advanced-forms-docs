@@ -1,6 +1,6 @@
 # How to prevent form submission based on submitted values
 
-To block a submission based on what was entered — without raising a hard PHP error — read the submitted value in [`af/form/before_submission`](https://advancedforms.github.io/actions/af/form/before_submission/) and call `af_add_submission_error()` to surface a user-facing error.
+To block a submission based on what was entered — without raising a hard PHP error — read the submitted value in [`af/form/before_submission`](../af-form-before_submission/) and call `af_add_submission_error()` to surface a user-facing error.
 
 ```php
 add_action( 'af/form/before_submission', function ( $form, $fields, $args ) {

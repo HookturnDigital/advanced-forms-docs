@@ -1,6 +1,6 @@
 # How to pre-fill group fields
 
-Group fields expect their pre-fill value as an array keyed by sub-field key (not name). Return that shape from [`af/field/prefill_value`](https://advancedforms.github.io/filters/af/field/prefill_value/) when the field being rendered is your group:
+Group fields expect their pre-fill value as an array keyed by sub-field key (not name). Return that shape from [`af/field/prefill_value`](../af-field-prefill_value/) when the field being rendered is your group:
 
 ```php
 add_filter( 'af/field/prefill_value', function ( $value, $field, $form, $args ) {

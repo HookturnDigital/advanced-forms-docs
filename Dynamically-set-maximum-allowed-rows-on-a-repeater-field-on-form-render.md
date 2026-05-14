@@ -1,6 +1,6 @@
 # Dynamically set maximum allowed rows on a repeater field on form render
 
-To set the max-row limit on a repeater dynamically — based on user role, current data, or any other runtime condition — modify the field's settings in [`af/field/before_render`](https://advancedforms.github.io/filters/af/field/before_render/) before the field renders.
+To set the max-row limit on a repeater dynamically — based on user role, current data, or any other runtime condition — modify the field's settings in [`af/field/before_render`](../af-field-before_render/) before the field renders.
 
 The `name=` variant of the filter is the cleanest way to target a specific repeater:
 

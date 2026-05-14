@@ -1,6 +1,6 @@
 # Store a calculated field value
 
-[Calculated fields](https://advancedforms.github.io/guides/using-calculated-fields/) are display-only by design — the value isn't stored against the ACF object on submission. To persist the result, store it manually from `af/form/submission` into a regular ACF field.
+[Calculated fields](../working-with-calculated-fields/) are display-only by design — the value isn't stored against the ACF object on submission. To persist the result, store it manually from `af/form/submission` into a regular ACF field.
 
 ```php
 // 1. Compute the calculated field's value when the form renders.

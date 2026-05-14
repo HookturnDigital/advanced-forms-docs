@@ -1,6 +1,6 @@
 # How to modify the CSS for notification emails
 
-Use the [`af/form/email/styles`](https://advancedforms.github.io/filters/af/form/email/styles/) filter to append (or replace) the inline CSS that styles a notification email. The filter returns a CSS string that gets embedded in the email's `<head>`.
+Use the [`af/form/email/styles`](../af-form-email-styles/) filter to append (or replace) the inline CSS that styles a notification email. The filter returns a CSS string that gets embedded in the email's `<head>`.
 
 The `/key=FORM_KEY` variant targets a specific form without needing a key check in the callback:
 

@@ -1,6 +1,6 @@
 # How to redirect the form submission after user creation
 
-When using Advanced Forms Pro to create users, you'll often want to redirect to a custom URL — and pass the new user's ID through to that URL. Hook into [`af/form/editing/user_created`](https://advancedforms.github.io/actions/af/form/editing/user_created/) and override the redirect on the submission:
+When using Advanced Forms Pro to create users, you'll often want to redirect to a custom URL — and pass the new user's ID through to that URL. Hook into [`af/form/editing/user_created`](../af-form-editing-user_created/) and override the redirect on the submission:
 
 ```php
 add_action( 'af/form/editing/user_created', function ( $user, $form, $args ) {

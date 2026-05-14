@@ -1,6 +1,6 @@
 # Adding custom email headers (CC, BCC, Reply-To) to notification emails
 
-Use the [`af/form/email/headers`](https://advancedforms.github.io/filters/af/form/email/headers/) filter to add custom headers to a notification email — `Reply-To`, `CC`, `BCC`, or anything else `wp_mail()` accepts.
+Use the [`af/form/email/headers`](../af-form-email-headers/) filter to add custom headers to a notification email — `Reply-To`, `CC`, `BCC`, or anything else `wp_mail()` accepts.
 
 The filter has a form-key suffix variant (`af/form/email/headers/key=FORM_KEY`) which is the cleanest way to target a specific form:
 

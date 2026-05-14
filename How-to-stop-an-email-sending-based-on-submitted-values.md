@@ -1,6 +1,6 @@
 # How to stop an email sending based on submitted values
 
-To conditionally suppress an email notification based on what was submitted, return `false` from [`af/form/email/recipient`](https://advancedforms.github.io/filters/af/form/email/recipient/) when the condition isn't met. A `false` return tells Advanced Forms to skip the email.
+To conditionally suppress an email notification based on what was submitted, return `false` from [`af/form/email/recipient`](../af-form-email-recipient/) when the condition isn't met. A `false` return tells Advanced Forms to skip the email.
 
 ```php
 add_filter( 'af/form/email/recipient', function ( $recipient, $email, $form, $fields ) {

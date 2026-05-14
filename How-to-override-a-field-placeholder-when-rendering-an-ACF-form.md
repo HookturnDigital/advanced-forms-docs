@@ -1,6 +1,6 @@
 # How to override a field placeholder when rendering an ACF form
 
-To change a field's placeholder at render time — without editing the field's settings in the ACF UI — modify the field array in [`af/field/before_render`](https://advancedforms.github.io/filters/af/field/before_render/):
+To change a field's placeholder at render time — without editing the field's settings in the ACF UI — modify the field array in [`af/field/before_render`](../af-field-before_render/):
 
 ```php
 add_filter( 'af/field/before_render', function ( $field, $form, $args ) {

@@ -2,7 +2,7 @@
 
 When a form creates both a user and a post in the same submission, you'll often want the new user to be the author of the new post. Advanced Forms Pro handles user creation first and stashes the new user's ID on the submission under the `user` key, ready for downstream hooks to use.
 
-Hook into [`af/form/editing/post_data`](https://advancedforms.github.io/filters/af/form/editing/post_data/) and set `post_author` from the submission:
+Hook into [`af/form/editing/post_data`](../af-form-editing-post_data/) and set `post_author` from the submission:
 
 ```php
 add_filter( 'af/form/editing/post_data', function ( $post_data, $form, $args ) {

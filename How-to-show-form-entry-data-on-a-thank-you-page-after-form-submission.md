@@ -35,7 +35,7 @@ add_shortcode( 'afp_entry_summary', function () {
 } );
 ```
 
-The 'thank you' page itself just needs a title and the `[afp_entry_summary]` shortcode — the form's [`redirect`](https://advancedforms.github.io/guides/available-arguments/#redirect) arg points at the page, and the visitor sees their submission summarised on arrival.
+The 'thank you' page itself just needs a title and the `[afp_entry_summary]` shortcode — the form's [`redirect`](../display-arguments/#redirect) arg points at the page, and the visitor sees their submission summarised on arrival.
 
 ## Common gotchas
 

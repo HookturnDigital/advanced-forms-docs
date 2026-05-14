@@ -20,7 +20,7 @@ With that in place, the form looks for a `post` query parameter on the request U
 
 ## Customising the query parameter
 
-If `post` clashes with something else on your site, you can change the parameter name with the [`af/form/editing/query_param`](https://advancedforms.github.io/filters/af/form/editing/query_param/) filter:
+If `post` clashes with something else on your site, you can change the parameter name with the [`af/form/editing/query_param`](../af-form-editing-query_param/) filter:
 
 ```php
 add_filter( 'af/form/editing/query_param', function ( $query_param, $form, $args ) {

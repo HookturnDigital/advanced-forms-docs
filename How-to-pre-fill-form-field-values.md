@@ -1,6 +1,6 @@
 # How to pre-fill form field values
 
-There are two ways to pre-fill form field values: via the `values` form arg (best for static data known at render time) or via the [`af/field/prefill_value`](https://advancedforms.github.io/filters/af/field/prefill_value/) filter (best when the value needs to be computed or conditional).
+There are two ways to pre-fill form field values: via the `values` form arg (best for static data known at render time) or via the [`af/field/prefill_value`](../af-field-prefill_value/) filter (best when the value needs to be computed or conditional).
 
 ## Pre-filling via the `values` form arg
 
@@ -15,7 +15,7 @@ advanced_form( 'YOUR_FORM_KEY_HERE', [
 ] );
 ```
 
-The [`values`](https://advancedforms.github.io/guides/available-arguments/#values) arg works with the function only — the `[advanced_form ...]` shortcode doesn't currently support it.
+The [`values`](../display-arguments/#values) arg works with the function only — the `[advanced_form ...]` shortcode doesn't currently support it.
 
 ## Pre-filling via `af/field/prefill_value`
 

@@ -1,6 +1,6 @@
 # How to prevent emails sending if form is updating a post
 
-To send notification emails only when a form **creates** a new post (not when it edits one), use [`af/form/email/recipient`](https://advancedforms.github.io/filters/af/form/email/recipients/) to disable the notification on update submissions by returning `false`.
+To send notification emails only when a form **creates** a new post (not when it edits one), use [`af/form/email/recipient`](../af-form-email-recipient/) to disable the notification on update submissions by returning `false`.
 
 ```php
 add_filter( 'af/form/email/recipient', function ( $recipient, $email, $form, $fields ) {

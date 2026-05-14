@@ -3,7 +3,7 @@
 To update a user's password from an Advanced Forms field:
 
 1. Add a password field to your form so the user can enter the new password.
-2. Hook into [`af/form/editing/user_updated`](https://advancedforms.github.io/actions/af/form/editing/user_updated/) to read the submitted value with `af_get_field()`.
+2. Hook into [`af/form/editing/user_updated`](../af-form-editing-user_updated/) to read the submitted value with `af_get_field()`.
 3. Call [`wp_set_password()`](https://developer.wordpress.org/reference/functions/wp_set_password/) to apply the new password.
 
 ```php

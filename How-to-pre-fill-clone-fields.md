@@ -2,7 +2,7 @@
 
 Pre-filling a clone field is a bit fiddly because the field name (and key) that appears at render time depends on the clone's **Prefix Field Names** setting. When it's enabled, the rendered field's name is the clone's name *joined* with the cloned field's name.
 
-Handle both cases inside [`af/field/prefill_value`](https://advancedforms.github.io/filters/af/field/prefill_value/):
+Handle both cases inside [`af/field/prefill_value`](../af-field-prefill_value/):
 
 ```php
 add_filter( 'af/field/prefill_value', function ( $value, $field, $form, $args ) {

@@ -10,7 +10,7 @@ On the form itself, make sure **Enable user editing?** is disabled. You're handl
 
 ## Create the users on submission
 
-Hook into [`af/form/submission`](https://advancedforms.github.io/actions/af/form/submission/), read the repeater with `af_get_field()`, and call [`wp_insert_user()`](https://developer.wordpress.org/reference/functions/wp_insert_user/) for each row:
+Hook into [`af/form/submission`](../af-form-submission/), read the repeater with `af_get_field()`, and call [`wp_insert_user()`](https://developer.wordpress.org/reference/functions/wp_insert_user/) for each row:
 
 ```php
 add_action( 'af/form/submission', function ( $form, $fields, $args ) {

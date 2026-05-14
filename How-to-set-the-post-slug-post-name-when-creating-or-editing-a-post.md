@@ -1,6 +1,6 @@
 # How to set the post slug (post name) when creating or editing a post
 
-The [`af/form/editing/post_data`](https://advancedforms.github.io/filters/af/form/editing/post_data/) filter lets you customise any post property — including `post_name` (the URL slug) — before Advanced Forms saves it. The filter applies on both create and edit.
+The [`af/form/editing/post_data`](../af-form-editing-post_data/) filter lets you customise any post property — including `post_name` (the URL slug) — before Advanced Forms saves it. The filter applies on both create and edit.
 
 The following snippet derives the slug from the post title, but you can source it from anywhere — a dedicated form field, a meta value, or any other logic:
 

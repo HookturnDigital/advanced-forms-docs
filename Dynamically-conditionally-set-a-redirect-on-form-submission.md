@@ -1,6 +1,6 @@
 # Dynamically / conditionally set a redirect on form submission
 
-To override a form's redirect at submission time — for example, sending users to different pages based on what they entered — hook into [`af/form/submission`](https://advancedforms.github.io/actions/af/form/submission/) and write the URL onto the submission's `redirect` arg.
+To override a form's redirect at submission time — for example, sending users to different pages based on what they entered — hook into [`af/form/submission`](../af-form-submission/) and write the URL onto the submission's `redirect` arg.
 
 The trick is **not** to mutate the form object, but to mutate the args on the current submission:
 

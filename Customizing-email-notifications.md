@@ -21,7 +21,7 @@ https://hookturn.freshdesk.com/a/solutions/articles/44002350060
 
 `af/form/email/recipient` filter 
 https://hookturn.freshdesk.com/a/solutions/articles/44002350073
-https://advancedforms.github.io/filters/af/form/email/recipient/
+../af-form-email-recipient/
 
 ## How to modify field values sent in notification emails
 https://hookturn.freshdesk.com/a/solutions/articles/44002350611

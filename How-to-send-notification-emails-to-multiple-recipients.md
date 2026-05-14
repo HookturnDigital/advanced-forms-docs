@@ -8,7 +8,7 @@ A single Advanced Forms notification can be sent to any number of recipients. Th
 
 ## Overriding the recipient list in code
 
-For dynamic recipient lists — e.g. based on form values or the current user — use the [`af/form/email/recipient`](https://advancedforms.github.io/filters/af/form/email/recipient/) filter:
+For dynamic recipient lists — e.g. based on form values or the current user — use the [`af/form/email/recipient`](../af-form-email-recipient/) filter:
 
 ```php
 add_filter( 'af/form/email/recipient', function ( $recipient, $email, $form, $fields ) {

@@ -1,6 +1,6 @@
 # How to redirect the form submission after post creation
 
-When using Advanced Forms Pro to create posts, you'll often want to redirect to a custom URL — and pass the new post's ID through to that URL. Hook into [`af/form/editing/post_created`](https://advancedforms.github.io/actions/af/form/editing/post_created/) and override the redirect on the submission:
+When using Advanced Forms Pro to create posts, you'll often want to redirect to a custom URL — and pass the new post's ID through to that URL. Hook into [`af/form/editing/post_created`](../af-form-editing-post_created/) and override the redirect on the submission:
 
 ```php
 add_action( 'af/form/editing/post_created', function ( $post, $form, $args ) {

@@ -11,7 +11,7 @@ Because these fields don't usually need to render in the admin (the admin alread
 
 ## Programmatic alternative
 
-If you need more control — e.g. transforming the value or deriving the title from multiple fields — use the [`af/form/editing/post_data`](https://advancedforms.github.io/filters/af/form/editing/post_data/) filter:
+If you need more control — e.g. transforming the value or deriving the title from multiple fields — use the [`af/form/editing/post_data`](../af-form-editing-post_data/) filter:
 
 ```php
 add_filter( 'af/form/editing/post_data', function ( $post_data, $form, $args ) {

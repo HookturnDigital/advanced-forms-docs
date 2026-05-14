@@ -3,7 +3,7 @@
 Advanced Forms enqueues two scripts when rendering a form — `af-forms-script` (Advanced Forms' own) and `acf-input` (ACF's). Both depend on jQuery, which gets pulled in automatically.
 
 The official guide covers the supported way to dequeue them via `af/form/enqueue`:
-[Decreasing the number of scripts and styles](https://advancedforms.github.io/guides/decreasing-number-of-scripts-and-styles/).
+[Decreasing the number of scripts and styles](../dequeue-scripts/).
 
 ## Tread carefully
 

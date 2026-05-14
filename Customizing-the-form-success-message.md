@@ -1,6 +1,6 @@
 # Customising the form success message
 
-The default success message is set in **Form Settings > Display > Success message** in the form editor. When you need the message to vary by form, by user, or by what happened during submission, filter it in PHP with [`af/form/success_message`](https://advancedforms.github.io/filters/af/form/success_message/).
+The default success message is set in **Form Settings > Display > Success message** in the form editor. When you need the message to vary by form, by user, or by what happened during submission, filter it in PHP with [`af/form/success_message`](../af-form-success_message/).
 
 ## Basic usage
 

@@ -1,6 +1,6 @@
 # How to trigger a form to save via AJAX as the form is updated
 
-When you combine the [`ajax`](https://advancedforms.github.io/guides/available-arguments/#ajax) form arg with [`filter_mode`](https://advancedforms.github.io/guides/available-arguments/#filter_mode) and [post editing](https://advancedforms.github.io/guides/creating-and-editing-posts/#editing-existing-posts), you get a form that stays in place and keeps updating the same post without ever showing a success message.
+When you combine the [`ajax`](../display-arguments/#ajax) form arg with [`filter_mode`](../display-arguments/#filter_mode) and [post editing](../creating-and-editing-posts/#editing-existing-posts), you get a form that stays in place and keeps updating the same post without ever showing a success message.
 
 You can take that one step further: hide the submit button and trigger submissions automatically as the form is updated.
 

@@ -2,7 +2,7 @@
 
 Advanced Forms doesn't store the submitter's IP address by default — IP addresses are personal data under GDPR, and storing them without an explicit need is a compliance liability you don't want to inherit by default.
 
-When you do need to store the IP (with the right user disclosure and legal basis in place), hook into [`af/form/entry_created`](https://advancedforms.github.io/actions/af/form/entry_created/) and write the IP onto the entry's post meta:
+When you do need to store the IP (with the right user disclosure and legal basis in place), hook into [`af/form/entry_created`](../af-form-entry_created/) and write the IP onto the entry's post meta:
 
 ```php
 add_action( 'af/form/entry_created', function ( $entry_id, $form ) {
