@@ -1297,6 +1297,76 @@
 					"Guides & Solutions"
 				]
 			}
+		},
+		"How-to-override-the-mail-notification-entirely.md": {
+			"post_title": "How to override the mail notification entirely",
+			"post_name": "override-mail-notification",
+			"meta": {
+				"rank_math_title": "Replace Advanced Forms notifications with a fully custom email handler",
+				"rank_math_description": "Remove the built-in notifications and send your own emails from af/form/submission using wp_mail() — full control when the existing filters aren't enough.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-dequeue-scripts.md": {
+			"post_title": "How to dequeue scripts",
+			"post_name": "dequeue-scripts",
+			"meta": {
+				"rank_math_title": "Dequeue Advanced Forms / ACF scripts via af/form/enqueue",
+				"rank_math_description": "Dequeue the af-forms-script and acf-input enqueues via af/form/enqueue — with notes on why doing this usually breaks form behaviour.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-send-email-notifications-to-the-current-logged-in-user.md": {
+			"post_title": "How to send email notifications to the current logged-in user",
+			"post_name": "email-current-logged-in-user",
+			"meta": {
+				"rank_math_title": "Send Advanced Forms notifications to the current logged-in user",
+				"rank_math_description": "Use af/form/email/recipient with wp_get_current_user() to send a notification to whoever's logged in at submission time.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-modify-the-CSS-for-notification-emails.md": {
+			"post_title": "How to modify the CSS for notification emails",
+			"post_name": "modify-email-notification-css",
+			"meta": {
+				"rank_math_title": "Customise the CSS used in Advanced Forms email notifications",
+				"rank_math_description": "Append or replace the inline CSS that styles Advanced Forms notifications using the af/form/email/styles filter — plus tips on email-client compatibility.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-hide-fields-from-the-admin-but-show-them-on-a-form.md": {
+			"post_title": "How to hide fields from the admin but show them on a form",
+			"post_name": "hide-fields-from-admin",
+			"meta": {
+				"rank_math_title": "Hide ACF fields from the admin while keeping them on the form",
+				"rank_math_description": "Toggle 'Hide from admin?' on a field to keep it visible on Advanced Forms forms but hidden from any admin location rules the field group is attached to.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
 		}
 	}
 }
