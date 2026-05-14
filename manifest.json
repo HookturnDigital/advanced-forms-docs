@@ -1157,6 +1157,76 @@
 					"Guides & Solutions"
 				]
 			}
+		},
+		"Store-a-calculated-field-value.md": {
+			"post_title": "Store a calculated field value",
+			"post_name": "store-calculated-field-value",
+			"meta": {
+				"rank_math_title": "Persist an Advanced Forms calculated field value into a regular ACF field",
+				"rank_math_description": "Calculated fields are display-only — use af/form/submission and update_field() to write the calculated value into a stored field on the record being created or edited.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-trigger-a-calculated-field-update.md": {
+			"post_title": "How to trigger a calculated field update",
+			"post_name": "trigger-calculated-field-update",
+			"meta": {
+				"rank_math_title": "Force an Advanced Forms calculated field to recalculate from JavaScript",
+				"rank_math_description": "Manually trigger a calculated field's AJAX recalculation when ACF's default change events aren't enough — plus warnings on request volume and overlapping responses.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-pre-fill-group-fields.md": {
+			"post_title": "How to pre-fill group fields",
+			"post_name": "prefill-group-fields",
+			"meta": {
+				"rank_math_title": "Pre-fill ACF group field values from af/field/prefill_value",
+				"rank_math_description": "Group fields need their pre-fill value as an array keyed by sub-field key (not name). Return that shape from af/field/prefill_value to populate group sub-fields.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"Dynamically-set-maximum-allowed-rows-on-a-repeater-field-on-form-render.md": {
+			"post_title": "Dynamically set maximum allowed rows on a repeater field on form render",
+			"post_name": "dynamic-repeater-max-rows",
+			"meta": {
+				"rank_math_title": "Set a repeater's max rows dynamically based on a runtime condition",
+				"rank_math_description": "Patch the field's max setting in af/field/before_render to cap repeater rows based on user role, current data, or any other runtime condition.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-prevent-form-submission-based-on-submitted-values.md": {
+			"post_title": "How to prevent form submission based on submitted values",
+			"post_name": "prevent-submission-by-value",
+			"meta": {
+				"rank_math_title": "Block a form submission based on submitted values with a friendly error",
+				"rank_math_description": "Use af_add_submission_error() inside af/form/before_submission to abort a submission and surface a user-visible error message above the form.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
 		}
 	}
 }
