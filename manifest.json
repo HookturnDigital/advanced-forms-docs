@@ -1017,6 +1017,76 @@
 					"Guides & Solutions"
 				]
 			}
+		},
+		"How-to-run-custom-JavaScript-immediately-before-form-is-submitted.md": {
+			"post_title": "How to run custom JavaScript immediately before form is submitted",
+			"post_name": "run-js-before-form-submit",
+			"meta": {
+				"rank_math_title": "Run custom JavaScript right before an Advanced Forms submission",
+				"rank_math_description": "Use af.addSubmissionStep on af/form/setup to intercept Advanced Forms submissions and run custom JavaScript — sync or async — before the request is sent.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-manage-a-users-profile.md": {
+			"post_title": "How to manage a user's profile",
+			"post_name": "manage-users-profile",
+			"meta": {
+				"rank_math_title": "Let users update their own profile with an Advanced Forms form",
+				"rank_math_description": "Render an Advanced Forms form with user=\"current\" on an account page and submissions update the logged-in user's profile automatically.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-edit-the-post-content-and-post-title.md": {
+			"post_title": "How to edit the post content & post title",
+			"post_name": "edit-post-content-and-title",
+			"meta": {
+				"rank_math_title": "Map an Advanced Forms field to a post's title or content",
+				"rank_math_description": "Use the form's Editing settings (or the af/form/editing/post_data filter) to write submitted values into a post's core title and content fields.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-provide-an-option-to-save-a-post-as-a-draft.md": {
+			"post_title": "How to provide an option to save a post as a draft",
+			"post_name": "save-post-as-draft-from-a-form",
+			"meta": {
+				"rank_math_title": "Let users choose between publish and draft when creating posts via a form",
+				"rank_math_description": "Add a radio field for the desired status and use af/form/editing/post_data to set post_status to draft or publish on submission.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-append-new-rows-to-an-existing-repeater-field.md": {
+			"post_title": "How to append new rows to an existing repeater field",
+			"post_name": "append-rows-to-existing-repeater",
+			"meta": {
+				"rank_math_title": "Append rows to an existing repeater field on form submission",
+				"rank_math_description": "Avoid rendering huge repeaters by removing the field from the form's mapping and using ACF's add_row() in a submission handler to append new rows instead.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
 		}
 	}
 }
