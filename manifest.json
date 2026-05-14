@@ -1577,6 +1577,48 @@
 					"Troubleshooting"
 				]
 			}
+		},
+		"Sorry-you-are-not-allowed-to-attach-files-to-this-post-when-adding-media-to-a-post.md": {
+			"post_title": "\"Sorry, you are not allowed to attach files to this post\" when adding media to a post",
+			"post_name": "not-allowed-to-attach-files",
+			"meta": {
+				"rank_math_title": "Fix \"Not allowed to attach files\" error in Advanced Forms",
+				"rank_math_description": "Users hitting \"Sorry, you are not allowed to attach files to this post\" when uploading via a form? It's a WordPress capability check — here's how to fix it.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"Gallery-field-not-working-for-some-users.md": {
+			"post_title": "Gallery field not working for some users",
+			"post_name": "gallery-field-upload-files-cap",
+			"meta": {
+				"rank_math_title": "Gallery field not working for some users — Advanced Forms",
+				"rank_math_description": "If the gallery field doesn't open the media uploader for some users, it's a WordPress capability check. Grant upload_files to the affected roles.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"How-to-fix-encoding-issues-with-special-characters-in-Apple-Mail-subject-lines.md": {
+			"post_title": "How to fix encoding issues with special characters in Apple Mail subject lines",
+			"post_name": "apple-mail-subject-encoding",
+			"meta": {
+				"rank_math_title": "Fix Apple Mail subject-line encoding issues — Advanced Forms",
+				"rank_math_description": "Notification subject lines sometimes appear garbled in Apple Mail. Strip the offending characters (commas are a known offender) via the af/form/email/subject filter.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
 		}
 	}
 }
