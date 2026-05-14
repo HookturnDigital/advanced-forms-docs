@@ -1619,6 +1619,76 @@
 					"Troubleshooting"
 				]
 			}
+		},
+		"Fields-are-empty-when-using-a-form-to-edit-a-post.md": {
+			"post_title": "Fields are empty when using a form to edit a post",
+			"post_name": "empty-fields-when-editing-post",
+			"meta": {
+				"rank_math_title": "Empty fields when editing a post with Advanced Forms",
+				"rank_math_description": "If your Advanced Forms edit form renders empty and creates new posts on submit, the post argument is missing. Here's how to wire it up correctly.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"Still-seeing-confirmation-after-page-refresh.md": {
+			"post_title": "Still seeing the confirmation message after a page refresh",
+			"post_name": "confirmation-persists-after-refresh",
+			"meta": {
+				"rank_math_title": "Form confirmation showing after page refresh — Advanced Forms",
+				"rank_math_description": "If your Advanced Forms confirmation message reappears after a page refresh, page caching is serving the post-submission HTML. Here's how to fix it.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"Add-new-tag-button-missing-on-taxonomy-field.md": {
+			"post_title": "'Add new tag' button missing on taxonomy field",
+			"post_name": "add-new-tag-button-missing",
+			"meta": {
+				"rank_math_title": "'Add new tag' button missing on ACF taxonomy field",
+				"rank_math_description": "The inline 'Add new tag' button on an ACF taxonomy field only shows for users with the taxonomy's manage_terms cap. Here's how to grant it.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"Uncaught-ReferenceError-acf-is-not-defined-error-appearing-in-console.md": {
+			"post_title": "Uncaught ReferenceError: acf is not defined",
+			"post_name": "acf-not-defined-error",
+			"meta": {
+				"rank_math_title": "Fix \"Uncaught ReferenceError: acf is not defined\" console error",
+				"rank_math_description": "Resolve the \"acf is not defined\" JavaScript error in Advanced Forms — usually caused by asset-optimisation plugins or deregistered jQuery UI scripts.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"Resolving-PHP-warnings-when-a-file-field-is-used-in-an-email-notification.md": {
+			"post_title": "Resolving PHP warnings when a file field is used in an email notification",
+			"post_name": "file-field-email-php-warnings",
+			"meta": {
+				"rank_math_title": "Fix PHP warnings from file fields in AF email notifications",
+				"rank_math_description": "PHP warnings when a file field is referenced in an Advanced Forms email notification usually trace to the field's Return Format. Here's the fix.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
 		}
 	}
 }
