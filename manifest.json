@@ -1227,6 +1227,76 @@
 					"Guides & Solutions"
 				]
 			}
+		},
+		"How-to-modify-field-values-sent-in-notification-emails.md": {
+			"post_title": "How to modify field values sent in notification emails",
+			"post_name": "modify-field-values-in-emails",
+			"meta": {
+				"rank_math_title": "Format an ACF field differently in an Advanced Forms notification email",
+				"rank_math_description": "Register a custom merge tag with af/merge_tags/resolve to format an ACF value differently in an email than its default Return Format would produce.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-store-IP-addresses-on-form-entries.md": {
+			"post_title": "How to store IP addresses on form entries",
+			"post_name": "store-ip-addresses-on-entries",
+			"meta": {
+				"rank_math_title": "Store the submitter's IP address on an Advanced Forms entry",
+				"rank_math_description": "Hook af/form/entry_created and write REMOTE_ADDR to the entry's post meta — plus reverse-proxy header notes and a GDPR compliance reminder.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-send-notification-emails-to-multiple-recipients.md": {
+			"post_title": "How to send notification emails to multiple recipients",
+			"post_name": "send-emails-to-multiple-recipients",
+			"meta": {
+				"rank_math_title": "Send an Advanced Forms notification to multiple recipients",
+				"rank_math_description": "Comma-separate recipients in the Custom recipient field, or use af/form/email/recipient for dynamic recipient lists based on form values or the current user.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-override-a-field-placeholder-when-rendering-an-ACF-form.md": {
+			"post_title": "How to override a field placeholder when rendering an ACF form",
+			"post_name": "override-field-placeholder",
+			"meta": {
+				"rank_math_title": "Override an ACF field's placeholder at render time with af/field/before_render",
+				"rank_math_description": "Patch the field array in af/field/before_render to change a field's placeholder (or any other setting) at render time without editing the field group.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"Using-a-calculated-field-to-show-an-aggregate-total-of-a-repeater-field.md": {
+			"post_title": "Using a calculated field to show an aggregate total of a repeater field",
+			"post_name": "aggregate-total-of-repeater",
+			"meta": {
+				"rank_math_title": "Sum a repeater sub-field into an Advanced Forms calculated field",
+				"rank_math_description": "Use a PHP-based calculator (af/field/calculate_value/name=…) to walk repeater rows server-side — the only way to aggregate values across rows of a repeater.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
 		}
 	}
 }
