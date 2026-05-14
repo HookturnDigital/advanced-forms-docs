@@ -1507,6 +1507,76 @@
 					"Guides & Solutions"
 				]
 			}
+		},
+		"How-to-exclude-sub-fields-from-rendering-in-a-form.md": {
+			"post_title": "How to exclude sub-fields from rendering in a form",
+			"post_name": "exclude-sub-fields",
+			"meta": {
+				"rank_math_title": "Extend exclude_fields to support sub-fields in repeaters, groups, and flex content",
+				"rank_math_description": "Advanced Forms' exclude_fields only applies to top-level fields. Add recursive sub-field support with a small mu-plugin that filters acf/load_fields during render.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"Hotfix-for-multiple-forms-on-same-page-triggering-validation-across-all-fields.md": {
+			"post_title": "Hotfix for multiple forms on same page triggering validation across all fields",
+			"post_name": "multi-form-validation-hotfix",
+			"meta": {
+				"rank_math_title": "Fix ACF 5.11+ cross-form validation bug on pages with multiple Advanced Forms",
+				"rank_math_description": "ACF 5.11+ runs validation across every form on the page. Patch acf.validation.onClickSubmit with a small hotfix script that scopes validation to the submitting form only.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"Issues-when-using-WP_Query-in-the-acf-load_field-filter.md": {
+			"post_title": "Issues when using WP_Query in the acf/load_field filter",
+			"post_name": "wp-query-in-load-field",
+			"meta": {
+				"rank_math_title": "Fix Advanced Forms admin breaking when WP_Query is used in acf/load_field",
+				"rank_math_description": "Switch from WP_Query to get_posts() inside acf/load_field callbacks to avoid global $post pollution that breaks the Advanced Forms admin form edit screen.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"Scripts-and-stylesheets-arent-loaded-when-a-form-is-rendered-via-AJAX.md": {
+			"post_title": "Scripts & stylesheets aren't loaded when a form is rendered via AJAX",
+			"post_name": "ajax-render-missing-assets",
+			"meta": {
+				"rank_math_title": "Fix missing scripts and styles when rendering Advanced Forms via AJAX",
+				"rank_math_description": "Advanced Forms enqueues its assets during normal rendering — when rendering via AJAX, call af_enqueue() so the form's scripts and styles get registered.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"What-to-do-when-there-are-JavaScript-errors-affecting-a-form.md": {
+			"post_title": "What to do when there are JavaScript errors affecting a form",
+			"post_name": "javascript-errors-affecting-forms",
+			"meta": {
+				"rank_math_title": "Diagnose JavaScript errors affecting an Advanced Forms form",
+				"rank_math_description": "Bisect third-party plugins to find what's interfering with Advanced Forms' scripts — plus the asset names to exclude from optimisation plugins that defer or combine scripts.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
 		}
 	}
 }
