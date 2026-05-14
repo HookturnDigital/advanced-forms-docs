@@ -604,10 +604,9 @@
 		"How-to-trigger-a-form-to-save-via-AJAX-as-the-form-is-updated.md": {
 			"post_title": "How to trigger a form to save via AJAX as the form is updated",
 			"post_name": "trigger-ajax-form-save",
-			"post_status": "draft",
 			"meta": {
-				"rank_math_title": "",
-				"rank_math_description": "",
+				"rank_math_title": "Auto-save an Advanced Forms submission via AJAX on every change",
+				"rank_math_description": "Combine AJAX, filter mode and post editing to update the same post in place without ever showing a success message.",
 				"rank_math_canonical_url": ""
 			},
 			"taxonomies": {
@@ -649,10 +648,9 @@
 		"How-to-redirect-the-form-submission-after-post-creation.md": {
 			"post_title": "How to redirect the form submission after post creation",
 			"post_name": "redirect-after-post-creation",
-			"post_status": "draft",
 			"meta": {
-				"rank_math_title": "",
-				"rank_math_description": "",
+				"rank_math_title": "Redirect after a form creates a post — Advanced Forms for ACF",
+				"rank_math_description": "Hook into af/form/editing/post_created to send users to a custom URL after a form creates a new post, with the new post's ID in the query string.",
 				"rank_math_canonical_url": ""
 			},
 			"taxonomies": {
@@ -664,10 +662,9 @@
 		"How-to-redirect-the-form-submission-after-user-creation.md": {
 			"post_title": "How to redirect the form submission after user creation",
 			"post_name": "redirect-after-user-creation",
-			"post_status": "draft",
 			"meta": {
-				"rank_math_title": "",
-				"rank_math_description": "",
+				"rank_math_title": "Redirect after a form creates a user — Advanced Forms for ACF",
+				"rank_math_description": "Hook into af/form/editing/user_created to send users to a custom URL after a form creates a new user, with the new user's ID in the query string.",
 				"rank_math_canonical_url": ""
 			},
 			"taxonomies": {
@@ -682,6 +679,34 @@
 			"meta": {
 				"rank_math_title": "Update a user's password from an Advanced Forms field",
 				"rank_math_description": "Use af/form/editing/user_updated and wp_set_password() to let users change their own password from an Advanced Forms field.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-assign-taxonomy-terms-to-posts.md": {
+			"post_title": "How to assign taxonomy terms to created/edited posts",
+			"post_name": "assign-taxonomy-terms-to-posts",
+			"meta": {
+				"rank_math_title": "Assign taxonomy terms to created or edited posts",
+				"rank_math_description": "ACF taxonomy fields don't currently set the terms against the post — bridge the gap with af/form/editing/post_created and wp_set_post_terms().",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-set-the-newly-created-user-as-author-of-a-newly-created-post.md": {
+			"post_title": "How to set the newly created user as author of a newly created post",
+			"post_name": "newly-created-user-as-post-author",
+			"meta": {
+				"rank_math_title": "Set a new user as the author of a new post — Advanced Forms for ACF",
+				"rank_math_description": "Use af/form/editing/post_data to assign the newly created user as the author of a post created in the same form submission.",
 				"rank_math_canonical_url": ""
 			},
 			"taxonomies": {
