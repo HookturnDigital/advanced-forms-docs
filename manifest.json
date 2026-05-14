@@ -1087,6 +1087,76 @@
 					"Guides & Solutions"
 				]
 			}
+		},
+		"Dynamically-conditionally-set-a-redirect-on-form-submission.md": {
+			"post_title": "Dynamically / conditionally set a redirect on form submission",
+			"post_name": "dynamic-redirect-on-submission",
+			"meta": {
+				"rank_math_title": "Dynamically set a redirect URL based on submitted values",
+				"rank_math_description": "Override AF()->submission['args']['redirect'] in af/form/submission to send users to different pages based on what they entered in the form.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-hide-fields-based-on-the-current-users-role.md": {
+			"post_title": "How to hide fields based on the current user's role",
+			"post_name": "hide-fields-by-user-role",
+			"meta": {
+				"rank_math_title": "Hide form fields per-role with af/field/before_render",
+				"rank_math_description": "Return false from af/field/before_render to drop fields out of the rendered form for users without the required role — they never appear in the DOM.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"Adding-custom-email-headers-to-notification-emails.md": {
+			"post_title": "Adding custom email headers (CC, BCC, Reply-To) to notification emails",
+			"post_name": "custom-email-headers",
+			"meta": {
+				"rank_math_title": "Add CC, BCC, and Reply-To headers to Advanced Forms notification emails",
+				"rank_math_description": "Use af/form/email/headers (or the form-key-suffixed variant) to add custom email headers to a notification email — Reply-To, CC, BCC, or anything wp_mail() accepts.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-assign-the-form-markup-to-a-variable.md": {
+			"post_title": "How to assign the form markup to a variable",
+			"post_name": "assign-form-markup-to-variable",
+			"meta": {
+				"rank_math_title": "Capture the form's HTML into a variable instead of echoing it",
+				"rank_math_description": "Set the echo arg to false on advanced_form() to have it return the form markup as a string — useful when wrapping the form or rendering it through a template engine.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-pre-fill-fields-from-values-in-a-URL-query-string.md": {
+			"post_title": "How to pre-fill fields from values in a URL query string",
+			"post_name": "prefill-from-url-query",
+			"meta": {
+				"rank_math_title": "Pre-fill Advanced Forms fields from URL query parameters",
+				"rank_math_description": "Read $_GET inside af/field/prefill_value to pre-fill a field with a value passed in the URL — handy for personalised links and tracking.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
 		}
 	}
 }
