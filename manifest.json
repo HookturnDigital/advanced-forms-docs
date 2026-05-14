@@ -90,20 +90,6 @@
 				]
 			}
 		},
-		"Frequently-asked-questions.md": {
-			"post_title": "Frequently asked questions",
-			"post_name": "faq",
-			"meta": {
-				"rank_math_title": "",
-				"rank_math_description": "",
-				"rank_math_canonical_url": ""
-			},
-			"taxonomies": {
-				"doc_section": [
-					"Reference"
-				]
-			}
-		},
 		"Display-arguments.md": {
 			"post_title": "Display arguments",
 			"post_name": "display-arguments",
@@ -1854,6 +1840,202 @@
 			"taxonomies": {
 				"doc_section": [
 					"Third Party Notes"
+				]
+			}
+		},
+		"Can-I-have-multiple-forms-on-the-same-page.md": {
+			"post_title": "Can I have multiple forms on the same page?",
+			"post_name": "multiple-forms-same-page",
+			"meta": {
+				"rank_math_title": "Can I have multiple forms on the same page? — Advanced Forms",
+				"rank_math_description": "Yes — Advanced Forms supports multiple forms on the same page. Heads up on the ACF 5.11 cross-form validation bug and the hotfix to apply.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
+				]
+			}
+		},
+		"Can-I-use-Advanced-Forms-to-list-a-users-posts-for-editing-or-deleting.md": {
+			"post_title": "Can I use Advanced Forms to list a user's posts for editing or deleting?",
+			"post_name": "list-users-posts",
+			"meta": {
+				"rank_math_title": "List a user's posts for editing or deleting with Advanced Forms",
+				"rank_math_description": "Advanced Forms handles the form itself — listing and deleting posts is built into your theme. Standard patterns for author lists, edit forms, and delete links.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
+				]
+			}
+		},
+		"Can-I-generate-a-PDF-from-a-form-submission.md": {
+			"post_title": "Can I generate a PDF from a form submission?",
+			"post_name": "generate-pdf-from-submission",
+			"meta": {
+				"rank_math_title": "Generate a PDF from a form submission — Advanced Forms",
+				"rank_math_description": "Advanced Forms doesn't generate PDFs out of the box, but you can hook into submissions, build a PDF in PHP, and attach it to the notification email.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
+				]
+			}
+		},
+		"Why-does-the-image-file-upload-field-change-when-a-user-is-logged-in-or-not.md": {
+			"post_title": "Why does the image/file upload field change when a user is logged in or not?",
+			"post_name": "upload-field-changes-logged-in",
+			"meta": {
+				"rank_math_title": "Why image/file upload field changes when logged in",
+				"rank_math_description": "ACF renders the basic HTML uploader instead of the WP media uploader when a user lacks the upload_files capability. Here's why, and how to fix it.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
+				]
+			}
+		},
+		"Can-I-export-form-entries.md": {
+			"post_title": "Can I export form entries?",
+			"post_name": "export-form-entries",
+			"meta": {
+				"rank_math_title": "Can I export form entries? — Advanced Forms for ACF",
+				"rank_math_description": "Advanced Forms has no built-in export, but entries are stored as a standard WP custom post type — use WP All Export or any post export tool.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
+				]
+			}
+		},
+		"Can-users-access-the-media-library-via-Advanced-Forms.md": {
+			"post_title": "Can users access the media library via Advanced Forms?",
+			"post_name": "media-library-access",
+			"meta": {
+				"rank_math_title": "Can users access the media library via Advanced Forms?",
+				"rank_math_description": "Logged-in users with upload_files get the WP media library in Advanced Forms upload fields. Control which uploader renders with the uploader display argument.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
+				]
+			}
+		},
+		"Can-I-display-the-users-password-in-a-form-field.md": {
+			"post_title": "Can I display the user's password in a form field?",
+			"post_name": "display-users-password",
+			"meta": {
+				"rank_math_title": "Can I display the user's password in a form field?",
+				"rank_math_description": "No — WordPress stores passwords as a one-way hash, so they can't be read back into a form field. Use wp_set_password() to let users change theirs instead.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
+				]
+			}
+		},
+		"Can-I-use-Advanced-Forms-to-enhance-WooCommerce.md": {
+			"post_title": "Can I use Advanced Forms to enhance WooCommerce?",
+			"post_name": "enhance-woocommerce",
+			"meta": {
+				"rank_math_title": "Can Advanced Forms enhance WooCommerce? — Hookturn",
+				"rank_math_description": "Advanced Forms has no built-in WooCommerce integration, but its actions and filters let you wire form submissions into WooCommerce order data.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
+				]
+			}
+		},
+		"Can-I-set-the-license-key-using-WP-CLI.md": {
+			"post_title": "Can I set the license key using WP CLI?",
+			"post_name": "license-key-wp-cli",
+			"meta": {
+				"rank_math_title": "Can I set the Advanced Forms license key via WP CLI?",
+				"rank_math_description": "Setting the Advanced Forms for ACF license key via WP CLI isn't supported yet. The key must be entered through the WordPress admin settings screen.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
+				]
+			}
+		},
+		"Does-the-MailChimp-integration-support-tags.md": {
+			"post_title": "Does the MailChimp integration support tags?",
+			"post_name": "mailchimp-tags-support",
+			"meta": {
+				"rank_math_title": "Does the MailChimp integration support tags? — Advanced Forms",
+				"rank_math_description": "Yes — the MailChimp integration supports tags via the af/form/mailchimp/request filter. Add tags (or any subscriber field) to the API request in PHP.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
+				]
+			}
+		},
+		"Why-is-my-success-message-not-showing-after-submission.md": {
+			"post_title": "Why is my success message not showing after submission?",
+			"post_name": "success-message-not-showing",
+			"meta": {
+				"rank_math_title": "Form success message not showing? Fix caching — Advanced Forms",
+				"rank_math_description": "If your Advanced Forms success message isn't showing after submission, page caching is usually to blame. Two fixes: exclude the page, or redirect to a thank-you page.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
+				]
+			}
+		},
+		"Why-does-my-form-with-many-fields-behave-strangely.md": {
+			"post_title": "Why does my form with many fields behave strangely?",
+			"post_name": "many-fields-max-input-vars",
+			"meta": {
+				"rank_math_title": "Form with many fields behaving strangely? Check max_input_vars",
+				"rank_math_description": "Forms with lots of fields can misbehave when PHP's max_input_vars limit drops inputs. Here's how to diagnose it and raise the limit on your host.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
+				]
+			}
+		},
+		"How-do-I-remove-the-default-styles-for-a-form.md": {
+			"post_title": "How do I remove the default styles for a form?",
+			"post_name": "remove-default-styles",
+			"meta": {
+				"rank_math_title": "Remove default form styles — Advanced Forms",
+				"rank_math_description": "Dequeue Advanced Forms' af-form-style and ACF's acf-input/acf-pro-input stylesheets via the af/form/enqueue action to style your form from scratch.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
+				]
+			}
+		},
+		"How-do-I-connect-my-form-to-an-external-service.md": {
+			"post_title": "How do I connect my form to an external service?",
+			"post_name": "connect-to-external-service",
+			"meta": {
+				"rank_math_title": "Connect Advanced Forms to external services — Hookturn",
+				"rank_math_description": "Connect your Advanced Forms form to external services via built-in Slack, MailChimp, and Zapier integrations — or write a custom wp_remote_post handler.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"FAQs"
 				]
 			}
 		}
