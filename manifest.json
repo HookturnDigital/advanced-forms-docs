@@ -1367,6 +1367,146 @@
 					"Guides & Solutions"
 				]
 			}
+		},
+		"How-to-pre-fill-clone-fields.md": {
+			"post_title": "How to pre-fill clone fields",
+			"post_name": "prefill-clone-fields",
+			"meta": {
+				"rank_math_title": "Pre-fill ACF clone field values, with and without Prefix Field Names",
+				"rank_math_description": "Match the rendered field name in af/field/prefill_value depending on whether Prefix Field Names is enabled — the joined name format catches the prefixed case.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-stop-an-email-sending-based-on-submitted-values.md": {
+			"post_title": "How to stop an email sending based on submitted values",
+			"post_name": "stop-email-by-value",
+			"meta": {
+				"rank_math_title": "Conditionally suppress an Advanced Forms notification by submitted value",
+				"rank_math_description": "Return false from af/form/email/recipient to skip a notification email when a submitted field doesn't match the expected value.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-get-the-entry-ID.md": {
+			"post_title": "How to get the entry ID",
+			"post_name": "get-entry-id",
+			"meta": {
+				"rank_math_title": "Read the created entry's ID from AF()->submission['entry']",
+				"rank_math_description": "When entry storage is enabled, the created entry's post ID is available on AF()->submission['entry'] — read it in af/form/submission to drive downstream work.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-add-an-opt-in-checkbox-for-MailChimp.md": {
+			"post_title": "How to add an opt-in checkbox for MailChimp",
+			"post_name": "mailchimp-opt-in-checkbox",
+			"meta": {
+				"rank_math_title": "Per-submission opt-in for the Advanced Forms MailChimp integration",
+				"rank_math_description": "Override $form['mailchimp'] in af/form/submission based on a true/false field — only sync to MailChimp when the user opts in via a checkbox.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-change-to-next-form-stage-on-enter.md": {
+			"post_title": "How to change to next form stage on enter",
+			"post_name": "next-stage-on-enter",
+			"meta": {
+				"rank_math_title": "Make Enter advance to the next stage on a multi-stage form",
+				"rank_math_description": "Intercept the Enter key on form inputs and click the form's $next_button instead — useful for keyboard-friendly multi-stage forms.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-show-a-notice-above-the-form-when-using-filter-mode.md": {
+			"post_title": "How to show a notice above the form when using filter mode",
+			"post_name": "notice-in-filter-mode",
+			"meta": {
+				"rank_math_title": "Show a post-submit confirmation when an Advanced Forms form uses filter mode",
+				"rank_math_description": "Use af/form/before_title (and af/form/ajax/submission for AJAX forms) to render a one-time 'changes saved' notice on profile-style filter-mode forms.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-scroll-to-top-of-form-when-changing-pages.md": {
+			"post_title": "How to scroll to top of form when changing pages",
+			"post_name": "scroll-to-top-on-page-change",
+			"meta": {
+				"rank_math_title": "Smooth-scroll back to the top of a multi-page Advanced Forms form on page change",
+				"rank_math_description": "Hook af/form/page_changed in JavaScript to scroll the form's container back into view whenever the user moves between pages.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-add-a-character-count-to-Wysiwyg-fields.md": {
+			"post_title": "How to add a character count to Wysiwyg fields",
+			"post_name": "wysiwyg-character-count",
+			"meta": {
+				"rank_math_title": "Add a soft character counter to an ACF Wysiwyg field",
+				"rank_math_description": "Hook acf.addFilter('wysiwyg_tinymce_settings') to inject a character-count display under the TinyMCE toolbar — soft cap, turns red over the limit.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-use-a-Google-Map-field-address-in-emails-and-success-messages.md": {
+			"post_title": "How to use a Google Map field address in emails & success messages",
+			"post_name": "google-map-address-in-emails",
+			"meta": {
+				"rank_math_title": "Render the address from a Google Map field in an email or success message",
+				"rank_math_description": "Register a custom merge tag that decodes the Google Map field's JSON payload and returns just the address (or any other key — lat/lng, city, postcode, etc.).",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
+		},
+		"How-to-add-attachments-to-a-notification-email.md": {
+			"post_title": "How to add attachments to a notification email",
+			"post_name": "email-attachments",
+			"meta": {
+				"rank_math_title": "Add file attachments to an Advanced Forms notification email",
+				"rank_math_description": "Use af/form/email/attachments to append absolute file paths — static files or files uploaded via the form itself via get_attached_file().",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Guides & Solutions"
+				]
+			}
 		}
 	}
 }
