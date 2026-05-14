@@ -1689,6 +1689,104 @@
 					"Troubleshooting"
 				]
 			}
+		},
+		"Fields-arent-displaying-correctly-in-the-form.md": {
+			"post_title": "Fields aren't displaying correctly in the form",
+			"post_name": "fields-not-displaying-correctly",
+			"meta": {
+				"rank_math_title": "Fix ACF fields not displaying correctly in Advanced Forms",
+				"rank_math_description": "Time picker showing as a date picker, wysiwyg unstyled, fields rendering wrong? Bisect plugin and theme conflicts to find what's breaking ACF assets.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"Why-cant-I-select-a-post-type-when-editing-posts.md": {
+			"post_title": "Why can't I select a post type when editing posts?",
+			"post_name": "post-type-missing-from-dropdown",
+			"meta": {
+				"rank_math_title": "Post type missing from Advanced Forms dropdown",
+				"rank_math_description": "If a post type doesn't show up in the Advanced Forms Post type dropdown, it's almost always because show_ui is false on the post type's registration.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"Email-notifications-contain-relative-file-paths-for-downloads.md": {
+			"post_title": "Email notifications contain relative file paths for downloads",
+			"post_name": "email-notifications-relative-file-paths",
+			"meta": {
+				"rank_math_title": "Fix relative file paths in email notifications — Advanced Forms",
+				"rank_math_description": "Advanced Forms email notifications showing /wp-content/uploads paths instead of full URLs? Track the plugin rewriting URLs and force absolute links.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"What-to-do-if-a-browser-auto-fills-the-honeypot-field-causing-a-form-to-be-invalid.md": {
+			"post_title": "What to do if a browser auto-fills the honeypot field causing a form to be invalid",
+			"post_name": "honeypot-autofill",
+			"meta": {
+				"rank_math_title": "Fix browser autofilling honeypot field in Advanced Forms",
+				"rank_math_description": "Safari and iOS sometimes autofill Advanced Forms' hidden honeypot field, breaking valid submissions. Here's how to rename or disable it via af/form/args.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"Non-human-user-detected-message-when-submitting-a-form.md": {
+			"post_title": "'Non-human user detected' message when submitting a form",
+			"post_name": "non-human-user-detected",
+			"meta": {
+				"rank_math_title": "Fix the 'Non-human user detected' form error",
+				"rank_math_description": "Advanced Forms rejecting a real submission with 'Non-human user detected'? Diagnose the honeypot trigger (auto-fill vs CSS) and apply the right fix.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"Field-values-are-ending-up-with-slashes-in-front-of-certain-characters.md": {
+			"post_title": "Field values are ending up with slashes in front of certain characters",
+			"post_name": "field-values-slashes",
+			"meta": {
+				"rank_math_title": "Field values have slashes before quotes or apostrophes",
+				"rank_math_description": "Backslashes appearing before quotes or apostrophes in ACF field values? Strip them with acf/format_value, or unslash $_POST before saving on submission.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
+		},
+		"Emails-are-sending-with-the-incorrect-from-email-address.md": {
+			"post_title": "Emails are sending with the incorrect 'from' email address",
+			"post_name": "incorrect-from-email-address",
+			"meta": {
+				"rank_math_title": "Fix incorrect From address on form email notifications",
+				"rank_math_description": "Form notification arriving with the wrong From address? Usually an SMTP plugin overriding wp_mail headers. Here's how to identify and fix it.",
+				"rank_math_canonical_url": ""
+			},
+			"taxonomies": {
+				"doc_section": [
+					"Troubleshooting"
+				]
+			}
 		}
 	}
 }
